@@ -1,3 +1,4 @@
+http://example.com/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/
 http://example.com/bangumis/index.html
 http://example.com/about/index.html
 http://example.com/gallery/index.html
@@ -5,7 +6,6 @@ http://example.com/bili/index.html
 http://example.com/movies/index.html
 http://example.com/categories/index.html
 http://example.com/game/index.html
-http://example.com/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/
 http://example.com/2023/03/20/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EButterfly%E7%B3%BB%E5%88%97%E9%AD%94%E6%94%B9/
 http://example.com/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/
 http://example.com/comments/index.html
