@@ -358,3 +358,25 @@ h6::before {
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
 }
+
+
+
+/* 标签 */
+
+#aside-content .card-tag-cloud a {
+  border: 2px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+
+.tag-cloud-list a {
+  border: 2px solid;
+  line-height: 1.5;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  margin: 5px;
+ 
+}
