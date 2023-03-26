@@ -13,8 +13,8 @@
     height: 8px;
     border-radius: 8px;
     width: 4rem;
-    background: #eaecf2;
-    border: 1px #e3e8f7;
+    background: #efecef;
+    border: 1px #fef8fe;
     overflow: hidden;
   }
   
@@ -42,7 +42,7 @@
     right: 100%;
     height: 100%;
     width: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #6252ee, #e73c7e, #76d523, #d58523);
     animation: gradient 1.5s ease infinite;
     background-size: 200%;
   }
