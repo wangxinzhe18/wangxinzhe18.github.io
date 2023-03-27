@@ -387,4 +387,13 @@ h6::before {
   background-size: cover;
 }
 
+/* 导航栏居中 */
+#nav-right {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 
