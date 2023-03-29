@@ -446,3 +446,26 @@ div#tag {
 div#category {
   background: rgba(255, 255, 255, 0.8);
 }
+
+/* 指定首页文章卡片高度 */
+#recent-posts>.post-card-large {
+  height: 20em!important;
+}
+
+#recent-posts > .post-card-large >.recent-post-info > .content{
+  -webkit-line-clamp: 5!important;
+}
+
+/*指针样式*/
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+      default;
+}
+/*链接小手样式*/
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+      default;
+}
+
+
