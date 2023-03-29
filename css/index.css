@@ -6324,7 +6324,7 @@ blockquote.pullquote.right {
   }
   
   .author-content-item.map {
-    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg) no-repeat center;
+    background: url(https://map0.ssl.qhimg.com/static/?center=30.59275,114.30521&size=570x480&maptype=roadmap&markers=&zoom=10) no-repeat center;
     min-height: 160px;
     max-height: 400px;
     position: relative;
@@ -6335,7 +6335,7 @@ blockquote.pullquote.right {
     transition: 1s ease-in-out;
   }
   [data-theme="dark"] .author-content-item.map {
-    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg) no-repeat center;
+    background: url(https://map0.ssl.qhimg.com/static/?center=30.59275,114.30521&size=570x480&maptype=roadmap&markers=&zoom=10) no-repeat center;
     background-size: 100%;
   }
   
@@ -6635,7 +6635,7 @@ blockquote.pullquote.right {
     transition: 2s ease-in-out;
   }
   .author-content-item.game-yuanshen {
-    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/12/19/63a079ca63c8a.webp) no-repeat top;
+    background: url(http://p1.qhimg.com/bdr/__85/t012b4bb6e211985885.jpg) no-repeat top;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -6659,9 +6659,9 @@ blockquote.pullquote.right {
     height: 18px;
     margin-right: 0.5rem;
   }
-  .icon-pos-mid {
+  /* .icon-pos-mid {
     background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/25/632fb9cecfc8c.png);
-  }
+  } */
   .author-content-item.game-yuanshen::after {
     box-shadow: 0 -69px 203px 11px #575d8b inset;
     position: absolute;
@@ -6674,7 +6674,7 @@ blockquote.pullquote.right {
   
   .author-content-item.comic-content {
     width: 39%;
-    background: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/violet.jpg) no-repeat top;
+    background: url(https://img0.baidu.com/it/u=12234321,3024831927&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500) no-repeat top;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -6691,14 +6691,14 @@ blockquote.pullquote.right {
   }
   
   .author-content-item.like-technology {
-    background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp) no-repeat;
+    background: url(http://p4.qhimg.com/bdr/__85/t0189b5579b44b7b5b4.jpg) no-repeat;
     background-size: cover;
     min-height: 230px;
     color: var(--anzhiyu-white);
   }
   
   .author-content-item.like-music {
-    background: url(https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg) no-repeat top;
+    background: url(https://pic1.zhimg.com/v2-0a220cc7ae734c9cc6bdd243a2b48b4c_r.jpg?source=1940ef5c) no-repeat top;
     background-size: cover;
     min-height: 400px;
     color: var(--anzhiyu-white);
