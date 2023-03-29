@@ -37,5 +37,5 @@ http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/
 http://example.com/categories/%E5%A3%81%E7%BA%B8/
 http://example.com/categories/Hexo%E5%8D%9A%E5%AE%A2/
 http://example.com/categories/%E5%90%8E%E7%AB%AF/
-http://example.com/categories/CF/
 http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/
+http://example.com/categories/CF/
