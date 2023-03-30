@@ -1,0 +1,88 @@
+#todolist-box{
+    margin: 0 10px;
+}
+#todolist-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 0 10px;
+}
+#todolist-main li{
+    list-style:none;
+    font-size: 17px;
+}
+#todolist-main ul{
+    margin: 0;
+    padding: 0;
+}
+#todolist-left{
+    width: 50%;
+    padding: 0 8px 0 0;
+}
+#todolist-right{
+    width: 50%;
+    padding: 0 0 0 8px;
+}
+.todolist-item{
+    position: relative;
+    background: #fae4df;
+    border-radius: 12px;
+    padding: 10px 1rem 1.2rem;
+    border: 2px dashed #f7a796;
+    margin-bottom: 1rem;
+}
+[data-theme=dark]
+.todolist-item{
+    background: #242424;
+    border: 2px dashed #51908b;
+}
+li.todolist-li i{
+    margin-left: 10px;
+}
+h3.todolist-title{
+    margin: 0!important;
+    border-bottom: var(--todo-border);
+}
+li.todolist-li{
+    border-bottom: var(--todo-border);
+    font-weight: normal;
+}
+.todolist-li span{
+    margin-left: 5px;
+}
+@media screen and (max-width:700px){
+    #todolist-left,#todolist-right{
+        width: 100%;
+        padding: 0;
+    }
+  }
+.page-top-card{
+  background-size: cover;
+  background-position: center;
+  height: 20.5rem;
+  padding: 10px 2.7rem;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+.page-top-card span.content-item-title{
+  font-size: 2.3em;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: STZhongsong,'Microsoft YaHei';
+}
+.page-top-card .content-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 5.4rem);
+  bottom: 1rem;
+}
+[data-theme='dark'] .page-top-card{
+  opacity: .92;
+}
+
+
+
