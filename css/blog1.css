@@ -1,0 +1,31 @@
+/* 整体布局 */
+.layout{
+    max-width:1400px;
+  }
+
+
+
+#archive,#page,#category,#tag{
+    width:100%;
+}
+.page:not(.page.home) .aside-content{
+    display: none;
+}
+
+
+.flink-list-item{
+    width:calc(100% / 4 - 15px)!important;
+}
+@media screen and (max-width: 1250px) {
+    .flink-list-item{
+        width:calc(100% / 3 - 15px)!important;
+    }
+}
+
+
+
+
+
+
+
+
