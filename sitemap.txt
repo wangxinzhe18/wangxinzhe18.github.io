@@ -1,3 +1,4 @@
+http://example.com/book/index.html
 http://example.com/movies/index.html
 http://example.com/about/index.html
 http://example.com/link/index.html
