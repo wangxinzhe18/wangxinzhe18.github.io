@@ -456,16 +456,16 @@ div#category {
   -webkit-line-clamp: 5!important;
 }
 
-/*指针样式*/
+
+
+/* 鼠标样式 */
 body {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
-      default;
+  cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/normal.cur"), default;
 }
-/*链接小手样式*/
 a,
-img {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
-      default;
+img,
+button {
+  cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/link.cur"), default !important;
 }
 
 
