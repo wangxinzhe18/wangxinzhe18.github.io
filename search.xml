@@ -52,6 +52,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo部署出现错误err: Error: Spawn failed解决方式</title>
+    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<p><strong>我们在部署Hexo博客过程中可能会遇到这个典型的错误</strong></p>
+<span id="more"></span>
+
+<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Error: </span>Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\HexoMyblog\myblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at ChildProcess.cp.emit (D:\HexoMyblog\myblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="解决方式1"><a href="#解决方式1" class="headerlink" title="解决方式1:"></a>解决方式1:</h3><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line">rm -rf .deploy_git/</span><br><span class="line"></span><br><span class="line"><span class="comment">##执行</span></span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<h3 id="解决方式2："><a href="#解决方式2：" class="headerlink" title="解决方式2："></a>解决方式2：</h3><p><strong>可能是你的git repo 配置的地址不正确，可以将http方式改为ssh方式</strong></p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line">vim _config.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">##修改</span></span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">type: git</span><br><span class="line"></span><br><span class="line">repo: https:<span class="regexp">//gi</span>thub.com<span class="regexp">/yourname/y</span>ourname.github.io.git -&gt; git@github.com:a956551943/weixiaohui.github.io.git</span><br><span class="line"></span><br><span class="line">branch: master</span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="解决方式3："><a href="#解决方式3：" class="headerlink" title="解决方式3："></a>解决方式3：</h3><p><strong>第一种跟第二种不行的话 才建议使用</strong></p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##进入depoly文件夹</span></span><br><span class="line">cd .deploy_git/</span><br><span class="line"></span><br><span class="line"><span class="comment">##强制推送</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>yaml</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mybatis单元测试</title>
     <url>/2023/03/14/Mybatis/</url>
     <content><![CDATA[<p><strong>友友们大家好，我是你们的小王同学😗😗<br>今天给大家打来的是 Mybatis实现单元测试<br>希望能给大家带来有用的知识<br>觉得小王写的不错的话麻烦动动小手 点赞👍 收藏⭐  评论📄<br>小王的主页：<a href="https://blog.csdn.net/weixin_59796310?spm=1000.2115.3001.5343">小王同学</a>🚗<br>小王的gitee：<a href="https://gitee.com/bitewang">小王同学🏩</a>🏩<br>小王的github：<a href="https://github.com/WANGxinzhe666">小王同学💦</a></strong></p>
@@ -87,32 +113,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo部署出现错误err: Error: Spawn failed解决方式</title>
-    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<p><strong>我们在部署Hexo博客过程中可能会遇到这个典型的错误</strong></p>
-<span id="more"></span>
-
-<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Error: </span>Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\HexoMyblog\myblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:513:28)</span><br><span class="line">    at ChildProcess.cp.emit (D:\HexoMyblog\myblog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="解决方式1"><a href="#解决方式1" class="headerlink" title="解决方式1:"></a>解决方式1:</h3><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line">rm -rf .deploy_git/</span><br><span class="line"></span><br><span class="line"><span class="comment">##执行</span></span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="解决方式2："><a href="#解决方式2：" class="headerlink" title="解决方式2："></a>解决方式2：</h3><p><strong>可能是你的git repo 配置的地址不正确，可以将http方式改为ssh方式</strong></p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line">vim _config.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">##修改</span></span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">type: git</span><br><span class="line"></span><br><span class="line">repo: https:<span class="regexp">//gi</span>thub.com<span class="regexp">/yourname/y</span>ourname.github.io.git -&gt; git@github.com:a956551943/weixiaohui.github.io.git</span><br><span class="line"></span><br><span class="line">branch: master</span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="解决方式3："><a href="#解决方式3：" class="headerlink" title="解决方式3："></a>解决方式3：</h3><p><strong>第一种跟第二种不行的话 才建议使用</strong></p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/src/</span>hexo<span class="regexp">/hanyubolg/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##进入depoly文件夹</span></span><br><span class="line">cd .deploy_git/</span><br><span class="line"></span><br><span class="line"><span class="comment">##强制推送</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>yaml</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring开发的常用模块</title>
     <url>/2023/03/14/SpringXml/</url>
     <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
@@ -131,31 +131,6 @@
       </categories>
       <tags>
         <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CODEFORCES习题</title>
-    <url>/2023/03/14/codeforces/</url>
-    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
-
-
-
-<p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
@@ -200,6 +175,31 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CODEFORCES习题</title>
+    <url>/2023/03/14/codeforces/</url>
+    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
+
+
+
+<p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
