@@ -1,3 +1,4 @@
+http://example.com/2023/04/08/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E5%88%9B%E5%BB%BA/
 http://example.com/about/index.html
 http://example.com/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/
 http://example.com/treasure/index.html
@@ -12,7 +13,6 @@ http://example.com/bangumis/index.html
 http://example.com/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/
 http://example.com/bili/index.html
 http://example.com/2023/03/20/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EButterfly%E7%B3%BB%E5%88%97%E9%AD%94%E6%94%B9/
-http://example.com/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/
 http://example.com/comments/index.html
 http://example.com/2023/03/15/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/
 http://example.com/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/
