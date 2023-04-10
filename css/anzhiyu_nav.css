@@ -307,7 +307,7 @@
     display: none;
   }
   #nav #search-button {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
   
   @media screen and (min-width: 900px) {
@@ -444,7 +444,7 @@
   
   #page-header #nav #menus .nav-button.long a.totopbtn:hover {
     border-radius: 35px;
-    height: 30px;
+    height: 50px;
   }
   
   #nav #search-button {
