@@ -309,6 +309,8 @@
   #nav #search-button {
     font-size: 1.8em;
   }
+ 
+  
   
   @media screen and (min-width: 900px) {
     #nav .back-home-button:hover {

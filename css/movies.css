@@ -1,5 +1,5 @@
 .author-content-item.single.like-movie {
-    height: 19rem;
+    height: 30rem;
     background: url(http://p1.qhimg.com/bdr/__85/t012b92d7e49ea42ad7.jpg) no-repeat top;
     background-size: cover;
     color: var(--Jay-white);
@@ -101,7 +101,10 @@ span.hexo-douban-pagenum {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    font-size: 2.0rem !important;
+    font-size: 20px;
 }
+
 
 .hexo-douban-picture {
     height: 100%;
