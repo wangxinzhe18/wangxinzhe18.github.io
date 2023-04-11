@@ -597,3 +597,14 @@ canvas#universe {
 #nav #search-button {
   font-size: 1.8em;
 }
+
+
+/* valine更改样式 */
+#veditor {
+	background-image: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/comment_bg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
