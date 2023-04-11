@@ -588,9 +588,6 @@ canvas#universe {
 }
 
 
-.layout.hide-aside {
-  max-width: 1200px;
-}
 
 .page .layout, .post .layout {
   max-width: 1400px;
