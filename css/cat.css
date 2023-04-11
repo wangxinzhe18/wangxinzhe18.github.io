@@ -1,0 +1,71 @@
+/* # 因魔改中有大量 css 颜色变量代码 如color: var(--icat-unify-white)等类似代码, 均为 css 颜色代码, 此处为目前所有的颜色变量定义 css */
+
+[data-theme="light"] {
+  --icat-unify-background: #f7f9fe
+  --icat-unify-white: #ffffff
+  --icat-unify-font-color-op: #3b70fc
+  --icat-unify-card-bg: #ffffff
+  --icat-unify-shadow-border: 0 8px 16px -4px #2c2d300c
+  --icat-unify-gray: #999999
+  --icat-unify-main: var(--icat-essay-theme)
+  --icat-unify-shadow-theme: 0 8px 12px -3px var(--icat-essay-theme-op)
+  --icat-loading-card-bg: #ffffff
+  --icat-essay-background: #f7f9fe
+  --icat-essay-fontcolor: #363636
+  --icat-style-border-always: 1px solid var(--icat-essay-card-border)
+  --icat-essay-card-border: #e3e8f7
+  --icat-essay-card-bg: #ffffff
+  --icat-essay-shadow-border: 0 8px 16px -4px #2c2d300c
+  --icat-essay-theme-op: var(--icat-essay-theme)
+  --icat-essay-theme: #3b70fc
+  --icat-essay-gray-op: #9999992b
+  --icat-style-border-hover: 1px solid var(--icat-essay-main)
+  --icat-essay-main: var(--icat-essay-theme)
+  --icat-essay-white: #ffffff
+  --icat-essay-secondbg: #f1f3f8
+  --icat-essay-gray: #999999
+  --icat-essay-font-color: #4c4948
+  --icat-essay-font-color-op: #3b70fc
+  --icat-essay-hr: rgba(66,89,239,0.137)
+  --icat-essay-secondtext: rgba(60, 60, 67, 0.6)
+  --icat-rightmenu-style-border: #0e83cd
+  --icat-rightmenu-theme-op: #4259ef23
+  --icat-about-background: #FFFFFF
+  --icat-about-maskbg: rgba(255, 255, 255, 0.6)
+  --icat-about-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15)
+  --icat-about-skill-background: #FFFFFF
+  --icat-about-style-border: 1px solid var(--icat-essay-card-border)
+}
+
+[data-theme="dark"] {
+  --icat-unify-background: #000000
+  --icat-unify-white: #ffffff
+  --icat-unify-card-bg: #1d1b26
+  --icat-unify-shadow-border: 0 8px 16px -4px #2c2d300c
+  --icat-unify-gray: #999999
+  --icat-unify-main: var(--icat-essay-theme)
+  --icat-unify-shadow-theme: 0 8px 12px -3px var(--icat-essay-theme-op)
+  --icat-loading-card-bg: #1d1b26
+  --icat-essay-background: #18171d
+  --icat-essay-fontcolor: #f7f7fa
+  --icat-style-border-always: 1px solid var(--icat-essay-card-border)
+  --icat-essay-card-border: #42444a
+  --icat-essay-card-bg: #1d1e22
+  --icat-essay-shadow-border: 0 8px 16px -4px #2c2d300c
+  --icat-essay-theme-op: var(--icat-essay-theme)
+  --icat-essay-theme: #0084ff
+  --icat-essay-gray-op: #9999992b
+  --icat-style-border-hover: 1px solid var(--icat-essay-main)
+  --icat-essay-main: var(--icat-essay-theme)
+  --icat-essay-white: #ffffff
+  --icat-essay-secondbg: #30343f
+  --icat-essay-gray: #999999
+  --icat-essay-font-color: rgba(255,255,255,0.7)
+  --icat-essay-secondtext: #a1a2b8
+  --icat-rightmenu-style-border: #3d3d3f
+  --icat-rightmenu-theme-op: #f2b94b23
+  --icat-about-maskbg: rgba(0, 0, 0, 0.6)
+  --icat-about-skill-background: #18171d
+}
+
+
