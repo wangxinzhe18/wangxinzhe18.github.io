@@ -340,9 +340,9 @@ h6::before {
 #footer {
   background: transparent !important;
 }
-#page-header {
+/* #page-header {
   background: transparent !important;
-}
+} */
 
 /* 白天模式遮罩透明 */
 #footer::before {
@@ -591,4 +591,9 @@ canvas#universe {
 
 .page .layout, .post .layout {
   max-width: 1400px;
+}
+
+/* 搜索按钮大小 */
+#nav #search-button {
+  font-size: 1.8em;
 }
