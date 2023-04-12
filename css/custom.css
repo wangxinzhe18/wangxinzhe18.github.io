@@ -601,7 +601,7 @@ canvas#universe {
 
 /* valine更改样式 */
 #veditor {
-	background-image: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/comment_bg.png);
+	background-image: url(https://s1.hdslb.com/bfs/seed/jinkela/short/mini-login-v2/img/22_open.4ea5f239.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -612,8 +612,12 @@ canvas#universe {
 
 /* 腾讯地图定位欢迎 */
 #welcome-info {
-  border-radius: 14px;
-  --icat-ip-color: #49B1F5;
+  background-image: url(https://s1.hdslb.com/bfs/seed/jinkela/short/mini-login-v2/img/33_open.f7d7f655.png);
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+  border-radius: 15px;
+  --icat-ip-color: #b818b6;
   --icat-gl-size: 16px!important;
 }
 
