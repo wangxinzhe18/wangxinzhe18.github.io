@@ -3,7 +3,7 @@ $.ajax({
     type: 'get',
     url: 'https://apis.map.qq.com/ws/location/v1/ip',
     data: {
-        key: '你获取的key',
+        key: 'J7KBZ-YMOKN-VLNF4-SO3MH-6B56T-2TBP4',
         output: 'jsonp',
     },
     dataType: 'jsonp',
