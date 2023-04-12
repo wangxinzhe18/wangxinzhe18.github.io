@@ -364,7 +364,7 @@ h6::before {
 
 /* 标签 */
 
-#aside-content .card-tag-cloud a {
+/* #aside-content .card-tag-cloud a {
   border: 2px solid;
   line-height: 1.5;
   border-radius: 6px;
@@ -380,7 +380,7 @@ h6::before {
   font-size: 1.2rem;
   margin: 5px;
  
-}
+} */
 
 /* 加载动画 */
 .loading-img {
@@ -590,7 +590,7 @@ canvas#universe {
 
 
 .page .layout, .post .layout {
-  max-width: 1400px;
+  max-width: 1450px;
 }
 
 /* 搜索按钮大小 */
@@ -608,3 +608,15 @@ canvas#universe {
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical
 }
+
+
+/* 腾讯地图定位欢迎 */
+#welcome-info {
+  border-radius: 14px;
+  --icat-ip-color: #49B1F5;
+  --icat-gl-size: 16px!important;
+}
+
+/* 公告顶部欢迎信息 */
+
+

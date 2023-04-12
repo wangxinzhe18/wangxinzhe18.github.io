@@ -7454,6 +7454,444 @@ blockquote.pullquote.right {
     color: var(--anzhiyu-secondtext);
     white-space: nowrap;
   }
+
+
+
+ 
+  /*充电按钮的全部CSS*/
+
+  .reward-main {
+    -webkit-animation: donate_effcet .3s .1s ease both;
+    -moz-animation: donate_effcet .3s .1s ease both;
+    -o-animation: donate_effcet .3s .1s ease both;
+    -ms-animation: donate_effcet .3s .1s ease both;
+    animation: donate_effcet .3s .1s ease both;
+  }
+
+  .post-reward {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .post-reward>* {
+    pointer-events: auto;
+  }
+
+  .post-reward .reward-button {
+    display: inline-block;
+    padding: 4px 24px;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    cursor: pointer;
+  }
+
+  .post-reward:hover .reward-button {
+    background: var(--btn-hover-color);
+  }
+
+  .post-reward:hover .reward-button>.reward-main {
+    display: block;
+  }
+
+  .post-reward .reward-main {
+    position: absolute;
+    bottom: 40px;
+    left: -23%;
+    z-index: 100;
+    display: none;
+    padding: 0 0 15px;
+  }
+
+  .post-reward .reward-main .reward-all {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin: 0;
+    padding: 20px 10px;
+    border-radius: 4px;
+    background: var(--reward-pop);
+  }
+
+  .post-reward .reward-main .reward-all:before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    content: '';
+  }
+
+  .post-reward .reward-main .reward-all:after {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 13px solid var(--reward-pop);
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+    content: '';
+  }
+
+  .post-reward .reward-main .reward-all .reward-item {
+    display: inline-block;
+    padding: 0 8px;
+    list-style-type: none;
+    vertical-align: top;
+  }
+
+  .post-reward .reward-main .reward-all .reward-item img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .post-reward .reward-main .reward-all .reward-item .post-qr-code-desc {
+    width: 130px;
+    color: #858585;
+  }
+
+  .author-content-item.single.reward .reward-list-updateDate {
+    color: var(--icat-unify-gray);
+    font-size: 14px;
+  }
+
+  @media screen and (max-width:768px) {
+    #gitcalendar {
+      display: none;
+    }[	data-theme=dark] .author-content-item .card-content .banner-button-group .banner-button {
+      color: #000!important;
+    }
+
+    .author-content-item .card-content .banner-button-group .banner-button:hover {
+      background: 0 0!important;
+    }
+
+    #page:has(#about-page) .page-title {
+      display: none;
+    }
+
+    .author-content-item.game-yuanshen .content-bottom {
+      padding-bottom: 10px;
+    }
+
+    .author-content-item.game-yuanshen .game-yuanshen-uid {
+      display: none;
+    }
+
+    .author-content {
+      margin-top: 0;
+    }
+
+    .author-content-item {
+      margin-top: 1rem;
+      padding: 1rem;
+      width: 100%!important;
+    }
+
+    .author-content-item.map {
+      margin-bottom: 0;
+    }
+
+    .author-content-item-group.column {
+      width: 100%!important;
+    }
+
+    .author-content-item.selfInfo {
+      height: 95%;
+    }
+
+    .author-content-item.personalities {
+      height: 170px;
+    }
+
+    .post-tips {
+      left: auto;
+    }
+
+    .author-content-item.personalities .image {
+      width: 90px;
+    }
+
+    .site-card-group>a {
+      width: 100%!important;
+    }
+
+    .post-reward {
+      display: none;
+    }
+
+    .layout>div:first-child:not(.recent-posts) {
+      padding: 1rem 1rem!important;
+      box-shadow: none!important;
+    }
+
+    .author-content-item .card-content .banner-button-group .banner-button-text {
+      display: none;
+    }
+
+    .author-content-item .card-content .banner-button-group {
+      right: 1rem;
+      bottom: 1rem;
+    }
+
+    .author-content-item .card-content .banner-button-group .banner-button {
+      padding: 0;
+      background: 0 0;
+    }
+
+    .author-content-item .card-content .banner-button-group .banner-button i {
+      margin-right: 0;
+      margin-left: 80px;
+      padding: 6px;
+      border-radius: 50%;
+      background: #fff;
+      font-size: 1.15rem;
+    }
+
+    .author-content-item .card-content .banner-button-group .banner-button:hover i {
+      background: var(--icat-about-background)!important;
+      color: var(--icat-essay-theme);
+    }
+
+    #selfInfo-content-year {
+      width: 90px;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:896px) {
+    .author-content-item.like-music .content-bottom .tips {
+      display: none;
+    }
+  }
+
+  #console.reward-show,#console.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #console.reward-show .console-mask,#console.show .console-mask {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .console-card-group-reward {
+    display: none;
+    opacity: 0;
+  }
+
+  .reward-show .console-card-group-reward {
+    position: absolute;
+    display: block;
+    opacity: 1;
+  }
+
+  .console-card-group-reward .reward-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .console-card-group-reward .reward-all .reward-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .console-card-group-reward .reward-all .reward-item img {
+    width: 230px;
+    height: 230px;
+  }
+
+  @media screen and (max-width:768px) {
+    .console-card-group-reward .reward-all .reward-item img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  .about-reward {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  @media screen and (max-width:768px) {
+    .reward .about-reward #con {
+      width: 170px;
+    }
+
+    .reward #tube-con {
+      display: none;
+    }
+  }
+
+  .reward #con {
+    position: relative;
+    width: 350px;
+    height: 85px;
+    border-radius: 4px;
+  }
+
+  .reward #TA-con {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 157px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #f25d8e;
+    box-shadow: 0 4px 4px rgba(255,112,159,.3);
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .reward #text-con {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100%;
+  }
+
+  .reward #linght {
+    position: absolute;
+    top: 36%;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-top: 10px solid #fff;
+    border-radius: 4px;
+    transform: rotate(-55deg);
+  }
+
+  .reward #linght::after {
+    position: absolute;
+    top: -13px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-top: 10px solid #fff;
+    border-radius: 4px;
+    content: "";
+    transform: rotate(180deg);
+  }
+
+  .reward #TA {
+    float: right;
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+  }
+
+  .reward #TA-con:hover {
+    background-color: #ff6b9a;
+  }
+
+  .reward #tube-con {
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    width: 157px;
+    height: 55px;
+  }
+
+  .reward svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reward #mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: all .5s;
+  }
+
+  .reward #mask svg {
+    width: 157px;
+    height: 55px;
+  }
+
+  .reward #TA-con:hover+#tube-con>#mask {
+    width: 157px;
+  }
+
+  .reward #TA-con:hover+#tube-con>#orange-mask {
+    animation: move1 .5s linear .2s infinite;
+  }
+
+  .reward #TA-con:hover+#tube-con>#orange-mask svg {
+    animation: movetwo .5s linear .2s infinite;
+  }
+
+  .reward #orange-mask {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    overflow: hidden;
+    width: 18px;
+    height: 100%;
+  }
+
+  .reward #orange-mask svg {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 157px;
+    height: 55px;
+  }
+
+  @keyframes move1 {
+    0% {
+      left: -15px;
+    }
+
+    100% {
+      left: 140px;
+    }
+  }
+
+  @keyframes movetwo {
+    0% {
+      left: 15px;
+    }
+
+    100% {
+      left: -140px;
+    }
+  }
+
+  .reward #people {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    color: #aaa;
+    font-size: 12px;
+    font-family: "雅黑";
+  }
+
+  .reward #people>b {
+    color: #777;
+  }
+
+
+
 .hello-about {
     margin: 20px auto;
     border-radius: 24px;
