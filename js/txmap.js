@@ -29,7 +29,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    let dist = getDistance(31.24899, 121.48919, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+    let dist = getDistance(29.24899, 113.48919, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
     let pos = ipLoacation.result.ad_info.nation;
     let ip;
     let posdesc;
@@ -146,7 +146,7 @@ function showWelcome() {
                             posdesc = "红安将军县！辈出将才！";
                             break;
                         default:
-                            posdesc = "来碗热干面~🥧";
+                            posdesc = "来qi碗热干面~🥧";
                             break;
                     }
                     break;
@@ -224,7 +224,7 @@ function showWelcome() {
     //根据本地时间切换欢迎语
     let timeChange;
     let date = new Date();
-    if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>🌤️ 早上好，一日之计在于晨</span>";
+    if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>🌤️ 早上好，一日之计在于晨 卷起来！</span>";
     else if (date.getHours() >= 11 && date.getHours() < 13) timeChange = "<span>☀️ 中午好，记得午休喔~</span>";
     else if (date.getHours() >= 13 && date.getHours() < 17) timeChange = "<span>🕞 下午好，饮茶先啦！</span>";
     else if (date.getHours() >= 17 && date.getHours() < 19) timeChange = "<span>🚶‍♂️ 即将下班，记得按时吃饭~</span>";
@@ -234,7 +234,7 @@ function showWelcome() {
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
-            `&emsp;&emsp;${timeChange} <br>欢迎来自 <b><span style="color: var(--icat-ip-color);font-size: var(--icat-gl-size)">${pos}</span></b> 的喵友，当前位置距博主约 <b><span style="color: var(--icat-ip-color)">${dist}</span></b> 公里！<br>&emsp;&emsp;您IP地址为：<b><span>${ip}</span></b><br>&emsp;&emsp;${posdesc} <br><br>`;
+            `&emsp;&emsp;${timeChange} <br>欢迎来自 <b><span style="color: var(--icat-ip-color);font-size: var(--icat-gl-size)">${pos}</span></b> 的友友，当前位置距博主约 <b><span style="color: var(--icat-ip-color)">${dist}</span></b> 公里！<br>&emsp;&emsp;您IP地址为：<b><span>${ip}</span></b><br>&emsp;&emsp;${posdesc} <br><br>`;
     } catch (err) {
         // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
     }
