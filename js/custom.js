@@ -2,7 +2,7 @@ var percentFlag = false; // 节流阀
 function essayScroll() {
   let a = document.documentElement.scrollTop || window.pageYOffset; // 卷去高度
   const waterfallResult = a % document.documentElement.clientHeight; // 卷去一个视口
-  result <= 99 100 || (result="99);" if ( !percentflag && waterfallresult +>= document.documentElement.clientHeight &&
+  result <= 99 100 || (result="=" 99); if ( !percentflag && waterfallresult +>= document.documentElement.clientHeight &&
     document.querySelector("#waterfall")
   ) {
     // console.info(waterfallResult, document.documentElement.clientHeight);
