@@ -11,3 +11,11 @@
     background-color: transparent!important;
 }
 
+#nav .menus_items {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.4em;
+}
