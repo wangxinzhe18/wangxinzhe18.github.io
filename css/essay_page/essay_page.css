@@ -8,7 +8,7 @@
   display: none;
 }
 #web_bg ~ .page:has(#essay_page) {
-  background: var(--icat-essay-background);
+  background: var(--anzhiyu-background);
 }
 #bber .bber-container-img {
   display: flex;
@@ -34,6 +34,7 @@
   overflow: hidden;
   display: flex;
   position: relative;
+  width: calc(100% / 4 - 5px);
   margin-bottom: 10px;
 }
 
@@ -41,15 +42,14 @@
   order: 0;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--icat-essay-fontcolor);
+  color: var(--anzhiyu-fontcolor);
   width: 100%;
   line-height: 1.38;
   border-radius: 12px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 0px 8px;
 }
 #bber p {
   margin: 0px;
@@ -64,7 +64,7 @@
 #bber .timeline ul li.bber-item {
   position: relative;
   width: 32%;
-  border: var(--icat-style-border-always);
+  border: var(--style-border-always);
   border-radius: 12px;
   padding: 1rem 1rem 0.5rem;
   transition: all 0.3s ease 0s;
@@ -72,8 +72,8 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--icat-essay-card-bg);
-  box-shadow: var(--icat-essay-shadow-border);
+  background: var(--anzhiyu-card-bg);
+  box-shadow: var(--anzhiyu-shadow-border);
   margin-right: 2%;
 }
 #bber .timeline #waterfall.show {
@@ -107,7 +107,7 @@
   display: flex;
   position: relative;
   margin: 8px 0px;
-  border: 1px dashed var(--icat-essay-hr);
+  border: 1px dashed var(--anzhiyu-theme-op);
   width: 100%;
 }
 
@@ -118,19 +118,14 @@
 
 #bber > section > ul > li > div .bber-info-time,
 #bber > section > ul > li > div .bber-info-from {
-  color: var(--icat-essay-fontcolor);
+  color: var(--anzhiyu-fontcolor);
   font-size: 0.7rem;
-  background-color: var(--icat-essay-gray-op);
+  background-color: var(--anzhiyu-gray-op);
   padding: 0px 8px;
   border-radius: 20px;
   cursor: default;
   display: flex;
   align-items: center;
-  padding-right: 10px;
-}
-
-#bber > section > ul > li > div .bber-info-time > i {
-  padding-right: 2px;
 }
 
 #bber .bber-info .far.fa-clock {
@@ -148,8 +143,12 @@
   margin-top: 10px;
 }
 
+#bber .bber-bottom .bber-reply {
+  cursor: pointer;
+}
+
 #bber .timeline ul li.bber-item:hover {
-  border: var(--icat-style-border-hover);
+  border: var(--style-border-hover);
 }
 
 #bber .bber-content-link {
@@ -161,14 +160,13 @@
   color: rgb(245, 108, 108);
   padding: 0px 8px;
   border-radius: 20px;
-  padding-right: 10px;
 }
 #bber .bber-content-link i {
   margin-right: 3px;
 }
 #bber .bber-content-link:hover {
-  background-color: var(--icat-essay-main);
-  color: var(--icat-essay-white);
+  background-color: var(--anzhiyu-main);
+  color: var(--anzhiyu-white);
 }
 #bber .bber-music {
   width: 100%;
@@ -176,8 +174,8 @@
   margin: 0.5rem 0;
   border-radius: 8px;
   overflow: hidden;
-  border: var(--icat-style-border-always);
-  background: var(--icat-essay-secondbg);
+  border: var(--style-border-always);
+  background: var(--anzhiyu-secondbg);
 }
 #bber .aplayer {
   margin: 0;
@@ -199,7 +197,7 @@
   font-size: 0.8rem;
   font-weight: 700;
   margin: 0;
-  color: var(--icat-essay-fontcolor);
+  color: var(--anzhiyu-fontcolor);
 }
 
 #bber .aplayer .aplayer-info .aplayer-controller {
@@ -212,7 +210,7 @@
   position: initial;
 }
 #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
-  background: var(--icat-essay-gray);
+  background: var(--anzhiyu-gray);
   height: 8px;
   border-radius: 12px;
   transition: 0.3s;
@@ -236,71 +234,16 @@
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
   height: 19rem;
-  background: url(https://s1.ax1x.com/2023/03/17/ppG0Aje.jpg) left 28% / cover no-repeat;
-  color: var(--icat-essay-white);
+  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg) left 28% / cover no-repeat;
+  color: var(--anzhiyu-white);
   overflow: hidden;
   margin-top: 0px;
-  border-radius: 8px;
 }
 #page:has(#essay_page) .author-content-item .card-content .banner-button-group .banner-button:hover {
-  color: var(--icat-essay-font-color-op);
+  color: var(--anzhiyu-white);
   border-radius: 20px !important;
 }
- 
-.author-content-item .card-content {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-}
-.author-content-item .author-content-item-tips {
-  opacity: .8;
-  font-size: .6rem;
-  margin-bottom: 0.5rem;
-}
-.author-content-item .card-content .author-content-item-title {
-  margin-bottom: 0.5rem;
-}
-.author-content-item .author-content-item-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1;
-}
-.author-content-item .content-bottom {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.author-content-item .card-content .banner-button-group .banner-button {
-  height: 40px;
-  width: 124px;
-  border-radius: 20px;
-  justify-content: center;
-  background: var(--icat-essay-card-bg);
-  color: var(--icat-essay-font-color);
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  transition: .3s;
-  cursor: pointer;
-  border-bottom: 0!important;
-}
-.author-content-item .card-content .banner-button-group .banner-button i {
-  margin-right: 4px;
-  font-size: 1rem;
-}
-.banner-button-text {
-  padding-right: 5px;
-}
-.banner-button-group {
-  margin-top: 10px;
-}
- 
+
 /* 响应式 */
 @media screen and (max-width: 1300px) {
   #bber .timeline ul li.bber-item {
@@ -317,11 +260,9 @@
 [data-theme="dark"] #bber .bber-music .aplayer,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {
-  background: var(--icat-essay-card-bg);
-  color: var(--icat-essay-fontcolor);
+  background: var(--anzhiyu-card-bg);
+  color: var(--anzhiyu-fontcolor);
 }
 #bber .aplayer .aplayer-lrc p {
-  color: var(--icat-essay-fontcolor);
+  color: var(--anzhiyu-fontcolor);
 }
-
-
