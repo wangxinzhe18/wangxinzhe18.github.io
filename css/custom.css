@@ -560,12 +560,12 @@ button {
 
 
 #home_top {
-  margin: 3rem auto 0;
-  padding: 0px 30px;
-  max-width: 1400px;
+  margin: 0 auto 0;
+  padding: 0 15px 20px;
+  max-width: 1450px;
   width: 100%;
+  overflow: hidden
 }
-
 
 
 [data-theme="dark"] #universe {
