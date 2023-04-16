@@ -716,7 +716,7 @@ canvas#universe {
 #bber ul.list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 #bber li.item {
@@ -1216,3 +1216,13 @@ a.bb-link-info:hover {
 }
 
 
+.layout#content-inner {
+  max-width: 1400px;
+}
+
+.layout {
+  display: flex;
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 1rem 1.5rem;
+}
