@@ -87,6 +87,11 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Spring开发的常用模块</title>
     <url>/2023/03/14/SpringXml/</url>
     <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
@@ -106,11 +111,6 @@
       <tags>
         <tag>XML</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>CODEFORCES习题</title>
