@@ -389,6 +389,7 @@ h6::before {
 }
 
 
+
 /* 一级菜单居中 */
 #nav .menus_items {
   position: absolute !important;
@@ -405,10 +406,44 @@ h6::before {
   left: -125px;
 }
 
+#menus>div.menus_items>div>a {
+  letter-spacing: 0.3rem;
+  padding-left: 0.7rem;
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 40px;
+}
 
 
 
+/* logo居中 */
+#weblogo {
+  align-self: center;
+}
 
+#footer-wrap a#seveneblog_footerlogo:hover {
+  background: var(--sevene-none);
+}
+
+.seveneblog_footerlogo_img {
+  filter: drop-shadow(0 12px 12px #ee7d7936);
+}
+
+.seveneblog_footerlogo_img:hover {
+  transform: scale(1.03);
+}
+
+/* 文章卡片高度 */
+#recent-posts .recent-post-item {
+  height: fit-content;
+  background: var(--sevene-card-bg);
+  border-radius: 13px;
+  cursor: pointer;
+  border: var(--style-border);
+}
 
 
 
@@ -569,8 +604,9 @@ button {
 #home_top {
   margin: 0 auto 0;
   padding: 0px 15px;
-  max-width: 1335px;
+  max-width: 1280px;
   width: 100%;
+  /* overflow: hidden; */
 }
 
 
@@ -1228,3 +1264,146 @@ a.bb-link-info:hover {
 }
 
 
+/* 首页分类条展示 */
+#category-bar {
+  padding: 0.4rem 1rem 0.4rem 0.5rem;
+  background: var(--sevene-card-bg);
+  border-radius: 12px;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: var(--style-border);
+  transition: 0.3s;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1300px) {
+  #category-bar:hover {
+    border: var(--style-border-hover);
+    box-shadow: var(--sevene-shadow-main);
+  }
+
+  .category-in-bar-tips {
+    margin-bottom: .25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #category-bar {
+    border-radius: 0;
+    background: var(--sevene-background);
+    margin-bottom: 0rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+    padding: 0rem 1rem 0rem 16px;
+    height: 50px;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+#category #category-bar {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+#category a.category-bar-item.select a {
+  display: none;
+}
+
+.category-in-bar {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.category-in-bar-tips {
+  margin-right: 1rem;
+}
+
+.category-bar-items {
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.category-in-bar .category-in-bar-tips {
+  margin-bottom: 0;
+}
+
+.category-in-bar #category-bar {
+  margin-bottom: 0;
+}
+
+
+.category-bar-items::-webkit-scrollbar {
+  display: none;
+}
+
+.category-bar-item a {
+  padding: 0.1rem 0.5rem;
+  margin: 0 4px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.category-bar-item:hover a {
+  background: var(--sevene-theme);
+  color: var(--sevene-white);
+}
+
+.category-bar-item.select a {
+  background: var(--sevene-theme);
+  color: var(--sevene-white);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .category-bar-item.select a {
+    border-radius: 8px;
+  }
+
+  .category-bar-item a {
+    border-radius: 8px;
+  }
+
+  .category-in-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    background: var(--sevene-background);
+    z-index: 1002;
+  }
+}
+
+.category-bar-item a {
+  padding: 0.1rem 0.5rem;
+  margin: 0 4px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.category-bar-item:hover a {
+  background: #002afa;
+  color: #002afa;
+}
+
+a {
+  background-color: transparent;
+  color: var(--sevene-fontcolor);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  overflow-wrap: break-word;
+}
+
+
+.category-bar-item.select a {
+  background: #425AEF;
+  color: var(--sevene-white);
+  border-radius: 8px;
+}
