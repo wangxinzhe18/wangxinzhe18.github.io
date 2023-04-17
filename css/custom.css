@@ -1411,30 +1411,81 @@ a {
 /*首页文章栏*/
 
 
-#recent-posts>.recent-post-item .post_cover {
-  width: 100%;
-  height: 200px
-}
-
-#recent-posts>.recent-post-item .post_cover img.post_bg {
-  width: 100%;
-  height: 100%
-}
-
 
 
 .recent-post-item .recent-post-info .article-title {
   font-weight: 800
 }
 
-.recent-post-item .recent-post-info .recent-post-info-top .original {
+/* #recent-posts>.recent-post-item {
+  box-shadow: var(--sevene-shadow-light2black);
   display: flex;
-  color: var(--heo-secondtext);
-  font-size: 0.5rem;
-  position: relative;
-  margin-right: 8px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+
+#recent-posts>.recent-post-item {
+  margin-top: 1rem;
+  display: inline-block;
+  height: auto;
+  width: 49%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto!important
+}
+
+#recent-posts {
+  margin-top: -1rem;
+  -ms-flex-line-pack: start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between
+}
+
+#recent-posts>.recent-post-item .post_cover {
+  width: 100%;
+  height: 200px
+}
+
+
+#recent-posts>.recent-post-item .recent-post-info {
+  width: 100%
+}
+
+#recent-posts>.recent-post-item .recent-post-info>.article-title {
+  -webkit-line-clamp: 1;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  color: var(--text-highlight-color);
+  font-size: 1.2em;
+  line-height: 1.4
 }
 
 #recent-posts>.recent-post-item .recent-post-info>.article-meta-wrap {
   margin-bottom: 1rem
-}
+} */
