@@ -59,10 +59,10 @@ img.footer_mini_logo {
     transition: cubic-bezier(0, 0, 0, 1.29) .5s
 }
 
-img.footer_mini_logo:hover {
+/* img.footer_mini_logo:hover {
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d
-}
+} */
 
 @media screen and (min-width: 1300px) {
     img.footer_mini_logo:hover {
