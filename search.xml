@@ -108,6 +108,11 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>CODEFORCES习题</title>
     <url>/2023/03/14/codeforces/</url>
     <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
@@ -133,9 +138,78 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
+    <title>Mysql insert注意事项</title>
+    <url>/2023/03/14/mysql/</url>
+    <content><![CDATA[<p>​</p>
+<p>                                   目录💌​</p>
+<p>                插入的数据应与字段的数据类型相同🎮</p>
+<p>        在values列出的数据位置必须与被加入的列的排列位置相应🎮</p>
+<p> </p>
+<p>         字符和日期类型的数据应该包含在单引号中🎮</p>
+<p> ​</p>
+<p>        列可以插入空值 前提是该字段允许为空🎮</p>
+<p>                列名后面可以添加多条记录🎮</p>
+<p>          向表中的所有字段添加数据时，可以不写前面的字段名称🎮</p>
+<p>                        默认值的使用🎮</p>
+<p> </p>
+<p>插入的数据应与字段的数据类型相同🎮<br>我们先创建一个goods表 </p>
+<span id="more"></span>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> );</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>下面插入一条语句</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;abc&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p>很显然是不可以的 因为id是一个整型 接收不了abc的类型！ </p>
+<p>小王同学打算再试着插入一条语句：
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;30&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p> </p>
+<p>居然可以通过 原因是 <code>30</code>这个字符串可以转化成整型的 但是abc 跟文字也不行！ <br>数据的长度应该在列的规定范围内🎮
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,<span class="string">&#x27;vivovivovivovivo手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+
+
+<p> 结果报错了error</p>
+<p>在values列出的数据位置必须与被加入的列的排列位置相应🎮<br>insert into <code>goods</code>(id ,goods_name,price)<br>values (‘华为手机’,20,2000);
+ </p>
+<p>原因就是 排列位置不匹配导致的！！ <br>字符和日期类型的数据应该包含在单引号中🎮
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,vivo手机,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p> <br>很显然是不行的！ 因为goods_name是一个varchar类型 是字符串要用单引号引起来</p>
+<p>列可以插入空值 前提是该字段允许为空🎮</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">30</span>,<span class="string">&#x27;华为手机&#x27;</span>,<span class="literal">NULL</span>);</span><br></pre></td></tr></table></figure>
+
+<p>我们查看表 发现找到了</p>
+<p>  </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
+<p> <br>如果在属性后面加了 NOT NULL之后就不允许插入空值了！就会出现图片上的错误</p>
+<p>列名后面可以添加多条记录🎮</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span></span><br><span class="line"><span class="keyword">values</span> (<span class="number">50</span>,<span class="string">&#x27;三星手机&#x27;</span>,<span class="number">2300</span>),(<span class="number">60</span>,<span class="string">&#x27;海尔手机&#x27;</span>,<span class="number">1900</span>);</span><br></pre></td></tr></table></figure>
+<p> </p>
+<p> 向表中的所有字段添加数据时，可以不写前面的字段名称🎮<br>我们再向goods表中添加两条数据</p>
+<p>如下图：</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> goods</span><br><span class="line"><span class="keyword">values</span>(<span class="number">90</span>,<span class="string">&#x27;苹果手机&#x27;</span>,<span class="number">5000</span>),(<span class="number">45</span>,<span class="string">&#x27;一加手机&#x27;</span>,<span class="number">4800</span>);</span><br><span class="line">然后<span class="keyword">select</span>*<span class="keyword">from</span> goods 表查看 成功了！</span><br></pre></td></tr></table></figure>
+
+
+
+<p>默认值的使用🎮<br>我们可以指定某个列的默认值 ，可以在创建表时创建</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods8`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="number">100</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> `goods`(id,goods_name)</span><br><span class="line"><span class="keyword">values</span>(<span class="number">60</span>,<span class="string">&#x27;格力手机&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+
+<p>显然 price 默认给的就是100！ </p>
+<p> 以上就是小王同学带给大家的insert注意事项 </p>
+<p>觉得写的不错的话 小手给个三连吧！</p>
+<p>谢谢大家这么好看还关注我！💟💟</p>
+<p>                          </p>
+<p>           </p>
+<p>                </p>
+<p>​</p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
   </entry>
   <entry>
     <title>Cookie和Session的区别</title>
@@ -272,80 +346,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mysql insert注意事项</title>
-    <url>/2023/03/14/mysql/</url>
-    <content><![CDATA[<p>​</p>
-<p>                                   目录💌​</p>
-<p>                插入的数据应与字段的数据类型相同🎮</p>
-<p>        在values列出的数据位置必须与被加入的列的排列位置相应🎮</p>
-<p> </p>
-<p>         字符和日期类型的数据应该包含在单引号中🎮</p>
-<p> ​</p>
-<p>        列可以插入空值 前提是该字段允许为空🎮</p>
-<p>                列名后面可以添加多条记录🎮</p>
-<p>          向表中的所有字段添加数据时，可以不写前面的字段名称🎮</p>
-<p>                        默认值的使用🎮</p>
-<p> </p>
-<p>插入的数据应与字段的数据类型相同🎮<br>我们先创建一个goods表 </p>
-<span id="more"></span>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> );</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>下面插入一条语句</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;abc&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p>很显然是不可以的 因为id是一个整型 接收不了abc的类型！ </p>
-<p>小王同学打算再试着插入一条语句：
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;30&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p> </p>
-<p>居然可以通过 原因是 <code>30</code>这个字符串可以转化成整型的 但是abc 跟文字也不行！ <br>数据的长度应该在列的规定范围内🎮
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,<span class="string">&#x27;vivovivovivovivo手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-
-
-<p> 结果报错了error</p>
-<p>在values列出的数据位置必须与被加入的列的排列位置相应🎮<br>insert into <code>goods</code>(id ,goods_name,price)<br>values (‘华为手机’,20,2000);
- </p>
-<p>原因就是 排列位置不匹配导致的！！ <br>字符和日期类型的数据应该包含在单引号中🎮
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,vivo手机,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p> <br>很显然是不行的！ 因为goods_name是一个varchar类型 是字符串要用单引号引起来</p>
-<p>列可以插入空值 前提是该字段允许为空🎮</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">30</span>,<span class="string">&#x27;华为手机&#x27;</span>,<span class="literal">NULL</span>);</span><br></pre></td></tr></table></figure>
-
-<p>我们查看表 发现找到了</p>
-<p>  </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
-<p> <br>如果在属性后面加了 NOT NULL之后就不允许插入空值了！就会出现图片上的错误</p>
-<p>列名后面可以添加多条记录🎮</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span></span><br><span class="line"><span class="keyword">values</span> (<span class="number">50</span>,<span class="string">&#x27;三星手机&#x27;</span>,<span class="number">2300</span>),(<span class="number">60</span>,<span class="string">&#x27;海尔手机&#x27;</span>,<span class="number">1900</span>);</span><br></pre></td></tr></table></figure>
-<p> </p>
-<p> 向表中的所有字段添加数据时，可以不写前面的字段名称🎮<br>我们再向goods表中添加两条数据</p>
-<p>如下图：</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> goods</span><br><span class="line"><span class="keyword">values</span>(<span class="number">90</span>,<span class="string">&#x27;苹果手机&#x27;</span>,<span class="number">5000</span>),(<span class="number">45</span>,<span class="string">&#x27;一加手机&#x27;</span>,<span class="number">4800</span>);</span><br><span class="line">然后<span class="keyword">select</span>*<span class="keyword">from</span> goods 表查看 成功了！</span><br></pre></td></tr></table></figure>
-
-
-
-<p>默认值的使用🎮<br>我们可以指定某个列的默认值 ，可以在创建表时创建</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods8`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="number">100</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> `goods`(id,goods_name)</span><br><span class="line"><span class="keyword">values</span>(<span class="number">60</span>,<span class="string">&#x27;格力手机&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-
-<p>显然 price 默认给的就是100！ </p>
-<p> 以上就是小王同学带给大家的insert注意事项 </p>
-<p>觉得写的不错的话 小手给个三连吧！</p>
-<p>谢谢大家这么好看还关注我！💟💟</p>
-<p>                          </p>
-<p>           </p>
-<p>                </p>
-<p>​</p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>手把手带你安装sublime插件带你高效刷算法</title>
     <url>/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
@@ -441,6 +441,28 @@
       </categories>
       <tags>
         <tag>java</tag>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机OSI模型</title>
+    <url>/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
+<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
+<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
+<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
+<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
+<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
+<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
         <tag>计算机网络</tag>
       </tags>
   </entry>
@@ -599,28 +621,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机OSI模型</title>
-    <url>/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
-<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
-<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
-<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
-<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
-<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
-<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
-<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
-<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
-<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
-<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
