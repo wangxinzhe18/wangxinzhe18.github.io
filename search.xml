@@ -113,6 +113,31 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>CODEFORCES习题</title>
+    <url>/2023/03/14/codeforces/</url>
+    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
+
+
+
+<p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cookie和Session的区别</title>
     <url>/2023/03/14/cookies/</url>
     <content><![CDATA[<p><img src="https://img-blog.csdnimg.cn/8ce52d1c7314485fa3db351bd0c9c955.gif#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/cfb33329497c4746b6d094ce00c7bfaa.png#pic_center" alt="在这里插入图片描述"></p>
@@ -157,28 +182,77 @@
       </tags>
   </entry>
   <entry>
-    <title>CODEFORCES习题</title>
-    <url>/2023/03/14/codeforces/</url>
-    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
+    <title>Mysql insert注意事项</title>
+    <url>/2023/03/14/mysql/</url>
+    <content><![CDATA[<p>​</p>
+<p>                                   目录💌​</p>
+<p>                插入的数据应与字段的数据类型相同🎮</p>
+<p>        在values列出的数据位置必须与被加入的列的排列位置相应🎮</p>
+<p> </p>
+<p>         字符和日期类型的数据应该包含在单引号中🎮</p>
+<p> ​</p>
+<p>        列可以插入空值 前提是该字段允许为空🎮</p>
+<p>                列名后面可以添加多条记录🎮</p>
+<p>          向表中的所有字段添加数据时，可以不写前面的字段名称🎮</p>
+<p>                        默认值的使用🎮</p>
+<p> </p>
+<p>插入的数据应与字段的数据类型相同🎮<br>我们先创建一个goods表 </p>
+<span id="more"></span>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> );</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>下面插入一条语句</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;abc&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p>很显然是不可以的 因为id是一个整型 接收不了abc的类型！ </p>
+<p>小王同学打算再试着插入一条语句：
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;30&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p> </p>
+<p>居然可以通过 原因是 <code>30</code>这个字符串可以转化成整型的 但是abc 跟文字也不行！ <br>数据的长度应该在列的规定范围内🎮
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,<span class="string">&#x27;vivovivovivovivo手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+
+
+<p> 结果报错了error</p>
+<p>在values列出的数据位置必须与被加入的列的排列位置相应🎮<br>insert into <code>goods</code>(id ,goods_name,price)<br>values (‘华为手机’,20,2000);
+ </p>
+<p>原因就是 排列位置不匹配导致的！！ <br>字符和日期类型的数据应该包含在单引号中🎮
+ </p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,vivo手机,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<p> <br>很显然是不行的！ 因为goods_name是一个varchar类型 是字符串要用单引号引起来</p>
+<p>列可以插入空值 前提是该字段允许为空🎮</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">30</span>,<span class="string">&#x27;华为手机&#x27;</span>,<span class="literal">NULL</span>);</span><br></pre></td></tr></table></figure>
+
+<p>我们查看表 发现找到了</p>
+<p>  </p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
+<p> <br>如果在属性后面加了 NOT NULL之后就不允许插入空值了！就会出现图片上的错误</p>
+<p>列名后面可以添加多条记录🎮</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span></span><br><span class="line"><span class="keyword">values</span> (<span class="number">50</span>,<span class="string">&#x27;三星手机&#x27;</span>,<span class="number">2300</span>),(<span class="number">60</span>,<span class="string">&#x27;海尔手机&#x27;</span>,<span class="number">1900</span>);</span><br></pre></td></tr></table></figure>
+<p> </p>
+<p> 向表中的所有字段添加数据时，可以不写前面的字段名称🎮<br>我们再向goods表中添加两条数据</p>
+<p>如下图：</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> goods</span><br><span class="line"><span class="keyword">values</span>(<span class="number">90</span>,<span class="string">&#x27;苹果手机&#x27;</span>,<span class="number">5000</span>),(<span class="number">45</span>,<span class="string">&#x27;一加手机&#x27;</span>,<span class="number">4800</span>);</span><br><span class="line">然后<span class="keyword">select</span>*<span class="keyword">from</span> goods 表查看 成功了！</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>默认值的使用🎮<br>我们可以指定某个列的默认值 ，可以在创建表时创建</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods8`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="number">100</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> `goods`(id,goods_name)</span><br><span class="line"><span class="keyword">values</span>(<span class="number">60</span>,<span class="string">&#x27;格力手机&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
 
-
-
-
+<p>显然 price 默认给的就是100！ </p>
+<p> 以上就是小王同学带给大家的insert注意事项 </p>
+<p>觉得写的不错的话 小手给个三连吧！</p>
+<p>谢谢大家这么好看还关注我！💟💟</p>
+<p>                          </p>
+<p>           </p>
+<p>                </p>
+<p>​</p>
 ]]></content>
       <categories>
-        <category>CF</category>
+        <category>后端</category>
       </categories>
       <tags>
-        <tag>cpp</tag>
+        <tag>Mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -269,80 +343,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mysql insert注意事项</title>
-    <url>/2023/03/14/mysql/</url>
-    <content><![CDATA[<p>​</p>
-<p>                                   目录💌​</p>
-<p>                插入的数据应与字段的数据类型相同🎮</p>
-<p>        在values列出的数据位置必须与被加入的列的排列位置相应🎮</p>
-<p> </p>
-<p>         字符和日期类型的数据应该包含在单引号中🎮</p>
-<p> ​</p>
-<p>        列可以插入空值 前提是该字段允许为空🎮</p>
-<p>                列名后面可以添加多条记录🎮</p>
-<p>          向表中的所有字段添加数据时，可以不写前面的字段名称🎮</p>
-<p>                        默认值的使用🎮</p>
-<p> </p>
-<p>插入的数据应与字段的数据类型相同🎮<br>我们先创建一个goods表 </p>
-<span id="more"></span>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> );</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>下面插入一条语句</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;abc&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p>很显然是不可以的 因为id是一个整型 接收不了abc的类型！ </p>
-<p>小王同学打算再试着插入一条语句：
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="string">&#x27;30&#x27;</span>,<span class="string">&#x27;小米手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p> </p>
-<p>居然可以通过 原因是 <code>30</code>这个字符串可以转化成整型的 但是abc 跟文字也不行！ <br>数据的长度应该在列的规定范围内🎮
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,<span class="string">&#x27;vivovivovivovivo手机&#x27;</span>,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-
-
-<p> 结果报错了error</p>
-<p>在values列出的数据位置必须与被加入的列的排列位置相应🎮<br>insert into <code>goods</code>(id ,goods_name,price)<br>values (‘华为手机’,20,2000);
- </p>
-<p>原因就是 排列位置不匹配导致的！！ <br>字符和日期类型的数据应该包含在单引号中🎮
- </p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">40</span>,vivo手机,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
-<p> <br>很显然是不行的！ 因为goods_name是一个varchar类型 是字符串要用单引号引起来</p>
-<p>列可以插入空值 前提是该字段允许为空🎮</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span>(id ,goods_name,price)</span><br><span class="line"><span class="keyword">values</span> (<span class="number">30</span>,<span class="string">&#x27;华为手机&#x27;</span>,<span class="literal">NULL</span>);</span><br></pre></td></tr></table></figure>
-
-<p>我们查看表 发现找到了</p>
-<p>  </p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
-<p> <br>如果在属性后面加了 NOT NULL之后就不允许插入空值了！就会出现图片上的错误</p>
-<p>列名后面可以添加多条记录🎮</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="symbol">`goods`</span></span><br><span class="line"><span class="keyword">values</span> (<span class="number">50</span>,<span class="string">&#x27;三星手机&#x27;</span>,<span class="number">2300</span>),(<span class="number">60</span>,<span class="string">&#x27;海尔手机&#x27;</span>,<span class="number">1900</span>);</span><br></pre></td></tr></table></figure>
-<p> </p>
-<p> 向表中的所有字段添加数据时，可以不写前面的字段名称🎮<br>我们再向goods表中添加两条数据</p>
-<p>如下图：</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> goods</span><br><span class="line"><span class="keyword">values</span>(<span class="number">90</span>,<span class="string">&#x27;苹果手机&#x27;</span>,<span class="number">5000</span>),(<span class="number">45</span>,<span class="string">&#x27;一加手机&#x27;</span>,<span class="number">4800</span>);</span><br><span class="line">然后<span class="keyword">select</span>*<span class="keyword">from</span> goods 表查看 成功了！</span><br></pre></td></tr></table></figure>
-
-
-
-<p>默认值的使用🎮<br>我们可以指定某个列的默认值 ，可以在创建表时创建</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `goods8`(</span><br><span class="line">id <span class="type">INT</span>,</span><br><span class="line">goods_name <span class="type">VARCHAR</span>(<span class="number">10</span>),</span><br><span class="line">price <span class="keyword">DOUBLE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> <span class="number">100</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> `goods`(id,goods_name)</span><br><span class="line"><span class="keyword">values</span>(<span class="number">60</span>,<span class="string">&#x27;格力手机&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-
-<p>显然 price 默认给的就是100！ </p>
-<p> 以上就是小王同学带给大家的insert注意事项 </p>
-<p>觉得写的不错的话 小手给个三连吧！</p>
-<p>谢谢大家这么好看还关注我！💟💟</p>
-<p>                          </p>
-<p>           </p>
-<p>                </p>
-<p>​</p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Mysql</tag>
       </tags>
   </entry>
   <entry>
