@@ -293,34 +293,6 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手带你安装sublime插件带你高效刷算法</title>
-    <url>/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
-<li><strong>打开 [sublime text 3官网](<a href="https://www.sublimetext.com/download">Download - Sublime Text</a>)</strong></li>
-<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
-<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
-</ol>
-<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
-<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/222.png"></p>
-<ol>
-<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
-<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
-<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
-<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
-<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
-<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
-</ol>
-<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/123.png"></p>
-<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>多线程的知识点</title>
     <url>/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
     <content><![CDATA[<h1 id="1-并发与并行🎊"><a href="#1-并发与并行🎊" class="headerlink" title="1.并发与并行🎊"></a>1.并发与并行🎊</h1><p><strong>并发：</strong><br><strong>指两个或多个事件在同一个时间段内发生。</strong></p>
@@ -371,6 +343,34 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手带你安装sublime插件带你高效刷算法</title>
+    <url>/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
+<li><strong>打开 [sublime text 3官网](<a href="https://www.sublimetext.com/download">Download - Sublime Text</a>)</strong></li>
+<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
+<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
+</ol>
+<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
+<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/222.png"></p>
+<ol>
+<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
+<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
+<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
+<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
+<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
+<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
+</ol>
+<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/123.png"></p>
+<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
