@@ -313,6 +313,13 @@
   </url>
   
   <url>
+    <loc>https://demo.wxz666.icu/tags/XML/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://demo.wxz666.icu/tags/java/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -327,7 +334,7 @@
   </url>
   
   <url>
-    <loc>https://demo.wxz666.icu/tags/XML/</loc>
+    <loc>https://demo.wxz666.icu/tags/Mysql/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -342,13 +349,6 @@
   
   <url>
     <loc>https://demo.wxz666.icu/tags/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2023-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.wxz666.icu/tags/Mysql/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

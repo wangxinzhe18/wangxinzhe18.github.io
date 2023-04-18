@@ -52,6 +52,27 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring开发的常用模块</title>
+    <url>/2023/03/14/SpringXml/</url>
+    <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+
+<h3 id="SSM常用配置"><a href="#SSM常用配置" class="headerlink" title="SSM常用配置"></a>SSM常用配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置数据库的连接字符串</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://127.0.0.1/mycnblog?characterEncoding=utf8</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">12345678</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="comment"># 设置 Mybatis 的 xml 保存路径</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mapper/*Mapper.xml</span></span><br><span class="line">  <span class="attr">configuration:</span> <span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line">    <span class="attr">log-impl:</span> <span class="string">org.apache.ibatis.logging.stdout.StdOutImpl</span></span><br><span class="line"><span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">com:</span></span><br><span class="line">      <span class="attr">example:</span></span><br><span class="line">        <span class="attr">demo:</span> <span class="string">debug</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Mybatis-xml模板"><a href="#Mybatis-xml模板" class="headerlink" title="Mybatis-xml模板"></a>Mybatis-xml模板</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>XML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mybatis单元测试</title>
     <url>/2023/03/14/Mybatis/</url>
     <content><![CDATA[<p><strong>友友们大家好，我是你们的小王同学😗😗<br>今天给大家打来的是 Mybatis实现单元测试<br>希望能给大家带来有用的知识<br>觉得小王写的不错的话麻烦动动小手 点赞👍 收藏⭐  评论📄<br>小王的主页：<a href="https://blog.csdn.net/weixin_59796310?spm=1000.2115.3001.5343">小王同学</a>🚗<br>小王的gitee：<a href="https://gitee.com/bitewang">小王同学🏩</a>🏩<br>小王的github：<a href="https://github.com/WANGxinzhe666">小王同学💦</a></strong></p>
@@ -87,6 +108,11 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>CODEFORCES习题</title>
     <url>/2023/03/14/codeforces/</url>
     <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
@@ -110,11 +136,6 @@
       <tags>
         <tag>cpp</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Cookie和Session的区别</title>
@@ -158,64 +179,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring开发的常用模块</title>
-    <url>/2023/03/14/SpringXml/</url>
-    <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-
-<h3 id="SSM常用配置"><a href="#SSM常用配置" class="headerlink" title="SSM常用配置"></a>SSM常用配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置数据库的连接字符串</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://127.0.0.1/mycnblog?characterEncoding=utf8</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">12345678</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="comment"># 设置 Mybatis 的 xml 保存路径</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mapper/*Mapper.xml</span></span><br><span class="line">  <span class="attr">configuration:</span> <span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line">    <span class="attr">log-impl:</span> <span class="string">org.apache.ibatis.logging.stdout.StdOutImpl</span></span><br><span class="line"><span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">com:</span></span><br><span class="line">      <span class="attr">example:</span></span><br><span class="line">        <span class="attr">demo:</span> <span class="string">debug</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Mybatis-xml模板"><a href="#Mybatis-xml模板" class="headerlink" title="Mybatis-xml模板"></a>Mybatis-xml模板</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>c语言实现一些简单的编程题</title>
-    <url>/2023/03/16/c%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A8%8B%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="C语言程序设计题"><a href="#C语言程序设计题" class="headerlink" title="C语言程序设计题"></a>C语言程序设计题</h2><p><strong>有一函数 其函数关系如下, 试编程求对于每一自变量的函数值。</strong></p>
-<p>   <strong>y &#x3D; x^2      (x&lt;0)</strong> </p>
-<p><strong>y &#x3D;  -0.5x+10    （x&lt;10)</strong> </p>
-<p>   <strong>y &#x3D; x-5</strong></p>
-<span id="more"></span>
-
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> x, y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>,&amp;x);</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span>) y = x * x;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (x &gt;= <span class="number">0</span> &amp;&amp; x &lt; <span class="number">10</span>) y = <span class="number">-0.5</span> * x + <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">else</span> y = x - <span class="number">5</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>,y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-输入10个学生的成绩，分别用函数实现。"><a href="#2-输入10个学生的成绩，分别用函数实现。" class="headerlink" title="2. 输入10个学生的成绩，分别用函数实现。"></a>2. 输入10个学生的成绩，分别用函数实现。</h2><p>​	<strong>(1) 求平均成绩；</strong></p>
-<p>​	<strong>(2) 按分数高低进行排序并输出。</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="title function_">average</span><span class="params">(<span class="type">int</span> b[])</span> &#123; <span class="comment">// 求平均成绩的函数</span></span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="type">float</span> avg = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ ) &#123;</span><br><span class="line">    sum += b[i]; <span class="comment">// 计算成绩总和</span></span><br><span class="line">    avg = sum / <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> avg;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//降序排列</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">declinesort</span> <span class="params">(<span class="type">int</span> b[], <span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++) &#123;</span><br><span class="line">        <span class="comment">// 确定比较趟数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">            <span class="comment">// 如果前一个元素小于后一个元素叫交换</span></span><br><span class="line">            <span class="keyword">if</span> (b[j] &lt; b[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="type">int</span> temp = b[j];</span><br><span class="line">                b[j] = b[j + <span class="number">1</span>];</span><br><span class="line">                b[j + <span class="number">1</span>] = temp;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">           </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span>  a[<span class="number">10</span>];</span><br><span class="line">    <span class="comment">// int  n = sizeof(a) / sizeof(a[0]);</span></span><br><span class="line">    <span class="type">float</span> avg = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    avg = average(a);</span><br><span class="line">    <span class="comment">// 打印平均成绩</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>, avg);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 降序排列</span></span><br><span class="line">    declinesort(a, <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="1-2-3-4-…-100"><a href="#1-2-3-4-…-100" class="headerlink" title="1+2+3+4+…+100"></a>1+2+3+4+…+100</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        sum +=i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-输出m-n之间所有自然数的和"><a href="#1-输出m-n之间所有自然数的和" class="headerlink" title="1.输出m,n之间所有自然数的和"></a><strong>1.输出m,n之间所有自然数的和</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">swap1</span><span class="params">(<span class="type">int</span> *a, <span class="type">int</span> *b)</span> &#123;</span><br><span class="line">    <span class="type">int</span> temp = *a;</span><br><span class="line">    *a = *b;</span><br><span class="line">    *b = temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span> <span class="params">(<span class="type">int</span>&amp; a, <span class="type">int</span>&amp; b)</span> &#123;</span><br><span class="line">    <span class="type">int</span> temp = a;</span><br><span class="line">    a = b;</span><br><span class="line">    b = temp;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 输出m,n之间所有自然数的和</span></span><br><span class="line">    <span class="type">int</span> m, n;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入区间&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;m,&amp;n);</span><br><span class="line">    <span class="keyword">if</span>(m &gt; n) swap(m,n);</span><br><span class="line">    <span class="keyword">if</span>(m &gt; n) swap1(&amp;m,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = m; i &lt;=n; i++) &#123;</span><br><span class="line">        sum += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;m,n之间的自然数的和是:%d&quot;</span>,sum);</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="判断输入字符的字母的个数-以-结尾"><a href="#判断输入字符的字母的个数-以-结尾" class="headerlink" title="判断输入字符的字母的个数 以*结尾"></a>判断输入字符的字母的个数 以*结尾</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> a[<span class="number">10000</span>];</span><br><span class="line">    gets(a);</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (a[i] != <span class="string">&#x27;*&#x27;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> ((a[i] &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; a[i] &lt;= <span class="string">&#x27;z&#x27;</span>) || (a[i] &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; a[i] &lt;= <span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            sum++;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, sum);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实现1-1000之间所有奇数的和并输出"><a href="#实现1-1000之间所有奇数的和并输出" class="headerlink" title="实现1 - 1000之间所有奇数的和并输出"></a>实现1 - 1000之间所有奇数的和并输出</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1000</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">            sum +=i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,sum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -290,6 +253,43 @@
       </categories>
       <tags>
         <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>c语言实现一些简单的编程题</title>
+    <url>/2023/03/16/c%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A8%8B%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="C语言程序设计题"><a href="#C语言程序设计题" class="headerlink" title="C语言程序设计题"></a>C语言程序设计题</h2><p><strong>有一函数 其函数关系如下, 试编程求对于每一自变量的函数值。</strong></p>
+<p>   <strong>y &#x3D; x^2      (x&lt;0)</strong> </p>
+<p><strong>y &#x3D;  -0.5x+10    （x&lt;10)</strong> </p>
+<p>   <strong>y &#x3D; x-5</strong></p>
+<span id="more"></span>
+
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> x, y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>,&amp;x);</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span>) y = x * x;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (x &gt;= <span class="number">0</span> &amp;&amp; x &lt; <span class="number">10</span>) y = <span class="number">-0.5</span> * x + <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">else</span> y = x - <span class="number">5</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>,y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-输入10个学生的成绩，分别用函数实现。"><a href="#2-输入10个学生的成绩，分别用函数实现。" class="headerlink" title="2. 输入10个学生的成绩，分别用函数实现。"></a>2. 输入10个学生的成绩，分别用函数实现。</h2><p>​	<strong>(1) 求平均成绩；</strong></p>
+<p>​	<strong>(2) 按分数高低进行排序并输出。</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="title function_">average</span><span class="params">(<span class="type">int</span> b[])</span> &#123; <span class="comment">// 求平均成绩的函数</span></span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="type">float</span> avg = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ ) &#123;</span><br><span class="line">    sum += b[i]; <span class="comment">// 计算成绩总和</span></span><br><span class="line">    avg = sum / <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> avg;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//降序排列</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">declinesort</span> <span class="params">(<span class="type">int</span> b[], <span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++) &#123;</span><br><span class="line">        <span class="comment">// 确定比较趟数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">            <span class="comment">// 如果前一个元素小于后一个元素叫交换</span></span><br><span class="line">            <span class="keyword">if</span> (b[j] &lt; b[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="type">int</span> temp = b[j];</span><br><span class="line">                b[j] = b[j + <span class="number">1</span>];</span><br><span class="line">                b[j + <span class="number">1</span>] = temp;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">           </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span>  a[<span class="number">10</span>];</span><br><span class="line">    <span class="comment">// int  n = sizeof(a) / sizeof(a[0]);</span></span><br><span class="line">    <span class="type">float</span> avg = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    avg = average(a);</span><br><span class="line">    <span class="comment">// 打印平均成绩</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>, avg);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 降序排列</span></span><br><span class="line">    declinesort(a, <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="1-2-3-4-…-100"><a href="#1-2-3-4-…-100" class="headerlink" title="1+2+3+4+…+100"></a>1+2+3+4+…+100</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        sum +=i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-输出m-n之间所有自然数的和"><a href="#1-输出m-n之间所有自然数的和" class="headerlink" title="1.输出m,n之间所有自然数的和"></a><strong>1.输出m,n之间所有自然数的和</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">swap1</span><span class="params">(<span class="type">int</span> *a, <span class="type">int</span> *b)</span> &#123;</span><br><span class="line">    <span class="type">int</span> temp = *a;</span><br><span class="line">    *a = *b;</span><br><span class="line">    *b = temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span> <span class="params">(<span class="type">int</span>&amp; a, <span class="type">int</span>&amp; b)</span> &#123;</span><br><span class="line">    <span class="type">int</span> temp = a;</span><br><span class="line">    a = b;</span><br><span class="line">    b = temp;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 输出m,n之间所有自然数的和</span></span><br><span class="line">    <span class="type">int</span> m, n;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入区间&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;m,&amp;n);</span><br><span class="line">    <span class="keyword">if</span>(m &gt; n) swap(m,n);</span><br><span class="line">    <span class="keyword">if</span>(m &gt; n) swap1(&amp;m,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = m; i &lt;=n; i++) &#123;</span><br><span class="line">        sum += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;m,n之间的自然数的和是:%d&quot;</span>,sum);</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="判断输入字符的字母的个数-以-结尾"><a href="#判断输入字符的字母的个数-以-结尾" class="headerlink" title="判断输入字符的字母的个数 以*结尾"></a>判断输入字符的字母的个数 以*结尾</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> a[<span class="number">10000</span>];</span><br><span class="line">    gets(a);</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (a[i] != <span class="string">&#x27;*&#x27;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> ((a[i] &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; a[i] &lt;= <span class="string">&#x27;z&#x27;</span>) || (a[i] &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; a[i] &lt;= <span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            sum++;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, sum);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实现1-1000之间所有奇数的和并输出"><a href="#实现1-1000之间所有奇数的和并输出" class="headerlink" title="实现1 - 1000之间所有奇数的和并输出"></a>实现1 - 1000之间所有奇数的和并输出</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1000</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">            sum +=i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,sum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -441,6 +441,28 @@
       </categories>
       <tags>
         <tag>java</tag>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机OSI模型</title>
+    <url>/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
+<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
+<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
+<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
+<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
+<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
+<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
         <tag>计算机网络</tag>
       </tags>
   </entry>
@@ -599,28 +621,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机OSI模型</title>
-    <url>/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
-<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
-<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
-<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
-<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
-<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
-<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
-<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
-<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
-<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
-<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
