@@ -1478,3 +1478,23 @@ a {
   
 }
 
+
+/* 最新文章 */
+.newPost-left,
+.newPost-right::before {
+    content: "new";
+    width: 3rem;
+    height: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+
