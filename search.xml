@@ -52,31 +52,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CODEFORCES习题</title>
-    <url>/posts/27264604.html</url>
-    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
-
-
-
-<p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/posts/0.html</url>
     <content><![CDATA[]]></content>
@@ -85,7 +60,7 @@
     <title>Mybatis单元测试</title>
     <url>/posts/bd09c562.html</url>
     <content><![CDATA[<p><strong>友友们大家好，我是你们的小王同学😗😗<br>今天给大家打来的是 Mybatis实现单元测试<br>希望能给大家带来有用的知识<br>觉得小王写的不错的话麻烦动动小手 点赞👍 收藏⭐  评论📄<br>小王的主页：<a href="https://blog.csdn.net/weixin_59796310?spm=1000.2115.3001.5343">小王同学</a>🚗<br>小王的gitee：<a href="https://gitee.com/bitewang">小王同学🏩</a>🏩<br>小王的github：<a href="https://github.com/WANGxinzhe666">小王同学💦</a></strong></p>
-<p>​<br><img src="https://img-blog.csdnimg.cn/2a39f99ca2854d6397688350329e4ede.png" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/2a39f99ca2854d6397688350329e4ede.png" alt="img"></p>
 <p><strong>后端开发的流程 如上图就是Mybatis查询所有用户的功能</strong></p>
 <span id="more"></span>
 
@@ -95,16 +70,16 @@
 
 <h3 id="添加mapper接口"><a href="#添加mapper接口" class="headerlink" title="添加mapper接口"></a><strong>添加mapper接口</strong></h3><p><img src="https://img-blog.csdnimg.cn/65d7522c212946bba7d016dbe97b19f2.png" alt="在这里插入图片描述"></p>
 <h3 id="添加UserMapper-xml"><a href="#添加UserMapper-xml" class="headerlink" title="添加UserMapper.xml"></a>添加UserMapper.xml</h3><p><img src="https://img-blog.csdnimg.cn/ce8b8febffe445bc99b2c6a2e5d1cc38.png" alt="在这里插入图片描述"></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">```xml</span><br><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper PUBLIC <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;select id=<span class="string">&quot;getUserById&quot;</span> resultType=<span class="string">&quot;com.example.demo.entity.Userinfo&quot;</span>&gt;</span><br><span class="line">        select * from userinfo where id=$&#123;id&#125;</span><br><span class="line"></span><br><span class="line">    &lt;/select&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">​```xml</span><br><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper PUBLIC <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;select id=<span class="string">&quot;getUserById&quot;</span> resultType=<span class="string">&quot;com.example.demo.entity.Userinfo&quot;</span>&gt;</span><br><span class="line">        select * from userinfo where id=$&#123;id&#125;</span><br><span class="line"></span><br><span class="line">    &lt;/select&gt;</span><br></pre></td></tr></table></figure>
 
 <p><strong><code>UserMapper.xml</code> 查询所有⽤户的具体实现 sql</strong></p>
 <p><strong>生成单元测试方法</strong></p>
 <p><img src="https://img-blog.csdnimg.cn/a2cb486aceaa4d3bb73d19ba4fb42d7b.png" alt="在这里插入图片描述"></p>
-<p>​</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">getUserById</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 添加单元测试的业务代码</span></span><br><span class="line">  <span class="type">Userinfo</span> <span class="variable">userinfo</span> <span class="operator">=</span> userMapper.getUserById(<span class="number">1</span>);</span><br><span class="line">    System.out.println(userinfo);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<p>​</p>
+
+
 <p><strong>​类的前面一定要加<code>@SpringBootTest</code></strong></p>
 <p><img src="https://img-blog.csdnimg.cn/0bdf0053c90b476388bd7fe382380050.png" alt="在这里插入图片描述"></p>
 <p><strong>单元测试成功！</strong></p>
@@ -179,6 +154,31 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CODEFORCES习题</title>
+    <url>/posts/27264604.html</url>
+    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
+
+
+
+<p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
@@ -365,6 +365,7 @@
 </ol>
 <p><img src="/posts/46a212e2.htm/123.png"></p>
 <p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2Faf241e22-9d3d-4254-9cc9-9b48f72b3ffd%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1684497611&t=79da501c9f91d5d8194986282e05ca16" alt="img"></p>
 ]]></content>
       <categories>
         <category>CF</category>
