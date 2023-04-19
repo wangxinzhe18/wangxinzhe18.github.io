@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>鬼刀好看的壁纸</title>
-    <url>/2023/03/14/6/</url>
+    <url>/posts/c1609a02.html</url>
     <content><![CDATA[<p><img src="https://img1.baidu.com/it/u=1535981841,1746583210&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500"></p>
 <p><img src="https://clubimg.club.vmall.com/data/attachment/forum/202108/03/175806dmz4bybqxrny62fy.jpg" alt="img"></p>
 <p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2Fef21fac9-73aa-49a5-b6fe-28e65ebda23a%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1681390459&t=4aa9edb340230c4561389aeffb932141" alt="img"></p>
@@ -17,12 +17,12 @@
   </entry>
   <entry>
     <title>Hexo个人博客基于Butterfly系列魔改</title>
-    <url>/2023/03/20/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EButterfly%E7%B3%BB%E5%88%97%E9%AD%94%E6%94%B9/</url>
+    <url>/posts/9798cf03.html</url>
     <content><![CDATA[<h1 id="首页分类磁贴新版-店长-✨"><a href="#首页分类磁贴新版-店长-✨" class="headerlink" title="首页分类磁贴新版(店长)✨"></a>首页分类磁贴新版(店长)✨</h1><p><strong>安装插件,在博客根目录<code>[Myblog]</code>下打开终端，运行以下指令：</strong></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-butterfly-categories-card --save</span><br></pre></td></tr></table></figure>
 
 <p><strong>效果：</strong></p>
-<p><img src="/2023/03/20/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EButterfly%E7%B3%BB%E5%88%97%E9%AD%94%E6%94%B9/22.png"></p>
+<p><img src="/posts/9798cf03.htm/22.png"></p>
 <p><strong>2.添加配置信息 具体写法如下</strong></p>
 <p><strong>在配置文件<code>_config.yml</code>或者主题配置文件<code>_config.butterfly.yml</code> 中添加以下代码</strong></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-butterfly-categories-card</span></span><br><span class="line"><span class="comment"># see https://akilar.top/posts/a9131002/</span></span><br><span class="line"><span class="attr">categoryBar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 开关</span></span><br><span class="line">  <span class="attr">priority:</span> <span class="number">5</span> <span class="comment">#过滤器优先权</span></span><br><span class="line">  <span class="attr">enable_page:</span> <span class="string">/</span> <span class="comment"># 应用页面</span></span><br><span class="line">  <span class="attr">layout:</span> <span class="comment"># 挂载容器类型</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">id</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">recent-posts</span></span><br><span class="line">    <span class="attr">index:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">column:</span> <span class="string">odd</span> <span class="comment"># odd：3列 | even：4列</span></span><br><span class="line">  <span class="attr">row:</span> <span class="number">1</span> <span class="comment">#显示行数，默认两行，超过行数切换为滚动显示</span></span><br><span class="line">  <span class="attr">message:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">Ubuntu指南</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover1.webp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">玩转Win10</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover2.webp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">长篇小说连载</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover3.webp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">个人日记</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover4.webp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">诗词歌赋</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover5.webp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">descr:</span> <span class="string">杂谈教程</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">https://assets.akilar.top/image/cover6.webp</span></span><br><span class="line">  <span class="attr">custom_css:</span> <span class="string">https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css</span></span><br></pre></td></tr></table></figure>
@@ -30,7 +30,7 @@
 
 
 <h1 id="文章置顶滚动栏（店长）✨"><a href="#文章置顶滚动栏（店长）✨" class="headerlink" title="文章置顶滚动栏（店长）✨"></a>文章置顶滚动栏（店长）✨</h1><p><strong>效果如下：</strong></p>
-<p><img src="/2023/03/20/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EButterfly%E7%B3%BB%E5%88%97%E9%AD%94%E6%94%B9/23.png"></p>
+<p><img src="/posts/9798cf03.htm/23.png"></p>
 <h3 id="1-安装插件-在博客根目录-BlogRoot-下打开终端，运行以下指令："><a href="#1-安装插件-在博客根目录-BlogRoot-下打开终端，运行以下指令：" class="headerlink" title="1.安装插件,在博客根目录[BlogRoot]下打开终端，运行以下指令："></a>1.安装插件,在博客根目录<code>[BlogRoot]</code>下打开终端，运行以下指令：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-butterfly-swiper --save</span><br></pre></td></tr></table></figure>
 
 <h3 id="添加配置信息，以下为写法示例"><a href="#添加配置信息，以下为写法示例" class="headerlink" title="添加配置信息，以下为写法示例"></a>添加配置信息，以下为写法示例</h3><p><strong>在站点配置文件<code>_config.yml</code>或者主题配置文件<code>_config.butterfly.yml</code>中添加</strong></p>
@@ -52,13 +52,38 @@
       </tags>
   </entry>
   <entry>
+    <title>CODEFORCES习题</title>
+    <url>/posts/27264604.html</url>
+    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
+
+
+
+<p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
-    <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
+    <url>/posts/0.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Mybatis单元测试</title>
-    <url>/2023/03/14/Mybatis/</url>
+    <url>/posts/bd09c562.html</url>
     <content><![CDATA[<p><strong>友友们大家好，我是你们的小王同学😗😗<br>今天给大家打来的是 Mybatis实现单元测试<br>希望能给大家带来有用的知识<br>觉得小王写的不错的话麻烦动动小手 点赞👍 收藏⭐  评论📄<br>小王的主页：<a href="https://blog.csdn.net/weixin_59796310?spm=1000.2115.3001.5343">小王同学</a>🚗<br>小王的gitee：<a href="https://gitee.com/bitewang">小王同学🏩</a>🏩<br>小王的github：<a href="https://github.com/WANGxinzhe666">小王同学💦</a></strong></p>
 <p>​<br><img src="https://img-blog.csdnimg.cn/2a39f99ca2854d6397688350329e4ede.png" alt="在这里插入图片描述"></p>
 <p><strong>后端开发的流程 如上图就是Mybatis查询所有用户的功能</strong></p>
@@ -93,7 +118,7 @@
   </entry>
   <entry>
     <title>Spring开发的常用模块</title>
-    <url>/2023/03/14/SpringXml/</url>
+    <url>/posts/69f8ad9a.html</url>
     <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
 <span id="more"></span>
 
@@ -113,33 +138,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CODEFORCES习题</title>
-    <url>/2023/03/14/codeforces/</url>
-    <content><![CDATA[<h1 id="CODEFORCES习题"><a href="#CODEFORCES习题" class="headerlink" title="CODEFORCES习题"></a>CODEFORCES习题</h1><h2 id="Round-855-Div-3"><a href="#Round-855-Div-3" class="headerlink" title="Round 855 Div . 3"></a>Round 855 Div . 3</h2><h3 id="C-Powering-the-Hero-easy-version"><a href="#C-Powering-the-Hero-easy-version" class="headerlink" title="C Powering the Hero (easy version)"></a>C Powering the Hero (easy version)</h3><span id="more"></span>
-
-
-
-<p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    priority_queue&lt;<span class="type">int</span> &gt; q;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++ ) &#123;</span><br><span class="line">        <span class="type">int</span> s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                ans += q.<span class="built_in">top</span>(); </span><br><span class="line">                q.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            q.<span class="built_in">push</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="D-Remove-Two-Letters"><a href="#D-Remove-Two-Letters" class="headerlink" title="D. Remove Two Letters"></a>D. Remove Two Letters</h2><p><strong>代码：</strong></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">()</span> </span>&#123; </span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = n - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i + <span class="number">2</span> &lt; n; i++ ) &#123;</span><br><span class="line">        ans -= (s[i] == s[i + <span class="number">2</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">       </span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> t;</span><br><span class="line">    cin &gt;&gt; t;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        <span class="built_in">slove</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cookie和Session的区别</title>
-    <url>/2023/03/14/cookies/</url>
+    <url>/posts/2e4d2fb1.html</url>
     <content><![CDATA[<p><img src="https://img-blog.csdnimg.cn/8ce52d1c7314485fa3db351bd0c9c955.gif#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/cfb33329497c4746b6d094ce00c7bfaa.png#pic_center" alt="在这里插入图片描述"></p>
 <blockquote>
 <p> 💟💟前言<br> ​<br><strong>友友们大家好，我是你们的小王同学😗😗<br>今天给大家打来的是 Cookie和Session的区别<br>希望能给大家带来有用的知识<br>觉得小王写的不错的话麻烦动动小手 点赞👍 收藏⭐  评论📄<br>小王的主页：<a href="https://blog.csdn.net/weixin_59796310?spm=1000.2115.3001.5343">小王同学</a>🚗<br>小王的gitee：<a href="https://gitee.com/bitewang">小王同学🏩</a>🏩<br>小王的github：<a href="https://github.com/WANGxinzhe666">小王同学💦</a></strong></p>
@@ -183,7 +183,7 @@
   </entry>
   <entry>
     <title>c语言实现一些简单的编程题</title>
-    <url>/2023/03/16/c%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A8%8B%E9%A2%98/</url>
+    <url>/posts/336c17de.html</url>
     <content><![CDATA[<h2 id="C语言程序设计题"><a href="#C语言程序设计题" class="headerlink" title="C语言程序设计题"></a>C语言程序设计题</h2><p><strong>有一函数 其函数关系如下, 试编程求对于每一自变量的函数值。</strong></p>
 <p>   <strong>y &#x3D; x^2      (x&lt;0)</strong> </p>
 <p><strong>y &#x3D;  -0.5x+10    （x&lt;10)</strong> </p>
@@ -220,7 +220,7 @@
   </entry>
   <entry>
     <title>Mysql insert注意事项</title>
-    <url>/2023/03/14/mysql/</url>
+    <url>/posts/332c33e4.html</url>
     <content><![CDATA[<p>​</p>
 <p>                                   目录💌​</p>
 <p>                插入的数据应与字段的数据类型相同🎮</p>
@@ -294,7 +294,7 @@
   </entry>
   <entry>
     <title>多线程的知识点</title>
-    <url>/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <url>/posts/43555ad1.html</url>
     <content><![CDATA[<h1 id="1-并发与并行🎊"><a href="#1-并发与并行🎊" class="headerlink" title="1.并发与并行🎊"></a>1.并发与并行🎊</h1><p><strong>并发：</strong><br><strong>指两个或多个事件在同一个时间段内发生。</strong></p>
 <p><strong>并行:</strong><br><strong>并行：指两个或多个事件在同一时刻发生（同时发生）</strong></p>
 <h1 id="2-线程与进程🎊"><a href="#2-线程与进程🎊" class="headerlink" title="2.线程与进程🎊"></a>2.线程与进程🎊</h1><h2 id="进程："><a href="#进程：" class="headerlink" title="进程："></a>进程：</h2><ul>
@@ -336,7 +336,7 @@
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.xiaowang;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">_67</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">        ThreadState state=<span class="keyword">new</span> <span class="title class_">ThreadState</span>(); <span class="comment">//创建state对象</span></span><br><span class="line">        Thread thread=<span class="keyword">new</span> <span class="title class_">Thread</span>(state); <span class="comment">//利用state对象创建Thread对象</span></span><br><span class="line">        System.out.println(<span class="string">&quot;新建线程:&quot;</span>+thread.getState()); <span class="comment">//输出线程状态</span></span><br><span class="line">        thread.start(); <span class="comment">//调用thread对象的start()方法，启动新线程</span></span><br><span class="line">        System.out.println(<span class="string">&quot;启动线程:&quot;</span>+thread.getState()); <span class="comment">//输出线程状态</span></span><br><span class="line">        Thread.sleep(<span class="number">100</span>);<span class="comment">//当前线程休眠0.1秒，使新线程运行waitForASecond（）方法</span></span><br><span class="line">        System.out.println(<span class="string">&quot;计时等待:&quot;</span>+thread.getState()); <span class="comment">//输出线程状态 </span></span><br><span class="line">        Thread.sleep(<span class="number">1000</span>);<span class="comment">//当前线程休眠1秒，使新线程运行waitForYears()方法</span></span><br><span class="line">        System.out.println(<span class="string">&quot;等待线程:&quot;</span>+thread.getState());<span class="comment">//输出线程状态</span></span><br><span class="line">        state.notifyNow();<span class="comment">//调用state的notifyNow()方法</span></span><br><span class="line">        System.out.println(<span class="string">&quot;唤醒线程:&quot;</span>+thread.getState());<span class="comment">//输出线程状态</span></span><br><span class="line">        Thread.sleep(<span class="number">1000</span>);;<span class="comment">//当前新线程休眠1秒，使新线程结束</span></span><br><span class="line">        System.out.println(<span class="string">&quot;终止线程:&quot;</span>+thread.getState()); <span class="comment">//输出进程状态  </span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2023/03/21/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/123.png"></p>
+<p><img src="/posts/43555ad1.htm/123.png"></p>
 ]]></content>
       <categories>
         <category>后端</category>
@@ -347,14 +347,14 @@
   </entry>
   <entry>
     <title>手把手带你安装sublime插件带你高效刷算法</title>
-    <url>/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/</url>
+    <url>/posts/46a212e2.html</url>
     <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
 <li><strong>打开 [sublime text 3官网](<a href="https://www.sublimetext.com/download">Download - Sublime Text</a>)</strong></li>
 <li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
 <li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
 </ol>
 <p>​                                       <strong>傻瓜式安装即可~~</strong></p>
-<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/222.png"></p>
+<p><img src="/posts/46a212e2.htm/222.png"></p>
 <ol>
 <li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
 <li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
@@ -363,7 +363,7 @@
 <li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
 <li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
 </ol>
-<p><img src="/2023/03/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%89%E8%A3%85sublime%E6%8F%92%E4%BB%B6%E5%B8%A6%E4%BD%A0%E9%AB%98%E6%95%88%E5%88%B7%E7%AE%97%E6%B3%95/123.png"></p>
+<p><img src="/posts/46a212e2.htm/123.png"></p>
 <p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
 ]]></content>
       <categories>
@@ -374,30 +374,8 @@
       </tags>
   </entry>
   <entry>
-    <title>计算机OSI模型</title>
-    <url>/2023/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BAOSI%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
-<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
-<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
-<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
-<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
-<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
-<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
-<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
-<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
-<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
-<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网络原理</title>
-    <url>/2023/03/15/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="独立模式"><a href="#独立模式" class="headerlink" title="独立模式"></a>独立模式</h2><blockquote>
 <p>独立模式：计算机之间相互独立</p>
 </blockquote>
@@ -467,8 +445,30 @@
       </tags>
   </entry>
   <entry>
+    <title>计算机OSI模型</title>
+    <url>/posts/db1ddf8c.html</url>
+    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
+<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
+<h2 id="ISO-x2F-OSI-参考模型–怎么来的？"><a href="#ISO-x2F-OSI-参考模型–怎么来的？" class="headerlink" title="ISO&#x2F;OSI 参考模型–怎么来的？"></a>ISO&#x2F;OSI 参考模型–怎么来的？</h2><span id="more"></span>
+<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
+<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
+<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
+<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机网络面试题</title>
-    <url>/2023/03/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <url>/posts/8badff60.html</url>
     <content><![CDATA[<h2 id="GET-和-POST-的区别"><a href="#GET-和-POST-的区别" class="headerlink" title="GET 和 POST 的区别"></a>GET 和 POST 的区别</h2><ul>
 <li><p><strong>作用</strong><br><strong>GET用来获取资源，POST用于传输实体主体</strong></p>
 </li>
@@ -625,7 +625,7 @@
   </entry>
   <entry>
     <title>首页轮播图的创建</title>
-    <url>/2023/04/08/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E5%88%9B%E5%BB%BA/</url>
+    <url>/posts/a9a97305.html</url>
     <content><![CDATA[<h1 id="给个人博客添加首页轮播图💌"><a href="#给个人博客添加首页轮播图💌" class="headerlink" title="给个人博客添加首页轮播图💌"></a>给个人博客添加<code>首页轮播图</code>💌</h1><blockquote>
 <p>适用于 <code>hexo - theme - butterfly</code> 主题</p>
 </blockquote>
@@ -650,7 +650,7 @@
 
 
 
-<p><strong>大功告成！！</strong><br><img src="/2023/04/08/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E5%88%9B%E5%BB%BA/swiper.png"></p>
+<p><strong>大功告成！！</strong><br><img src="/posts/a9a97305.htm/swiper.png"></p>
 ]]></content>
       <categories>
         <category>Hexo博客</category>
