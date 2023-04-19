@@ -87,27 +87,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Spring开发的常用模块</title>
-    <url>/2023/03/14/SpringXml/</url>
-    <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-
-<h3 id="SSM常用配置"><a href="#SSM常用配置" class="headerlink" title="SSM常用配置"></a>SSM常用配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置数据库的连接字符串</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://127.0.0.1/mycnblog?characterEncoding=utf8</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">12345678</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="comment"># 设置 Mybatis 的 xml 保存路径</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mapper/*Mapper.xml</span></span><br><span class="line">  <span class="attr">configuration:</span> <span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line">    <span class="attr">log-impl:</span> <span class="string">org.apache.ibatis.logging.stdout.StdOutImpl</span></span><br><span class="line"><span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">com:</span></span><br><span class="line">      <span class="attr">example:</span></span><br><span class="line">        <span class="attr">demo:</span> <span class="string">debug</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Mybatis-xml模板"><a href="#Mybatis-xml模板" class="headerlink" title="Mybatis-xml模板"></a>Mybatis-xml模板</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2023/03/15/Hexo%E9%83%A8%E7%BD%B2%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFerr-Error-Spawn-failed%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[]]></content>
@@ -135,6 +114,27 @@
       </categories>
       <tags>
         <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring开发的常用模块</title>
+    <url>/2023/03/14/SpringXml/</url>
+    <content><![CDATA[<h3 id="Spring数据库连接配置"><a href="#Spring数据库连接配置" class="headerlink" title="Spring数据库连接配置"></a>Spring数据库连接配置</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">3306</span>/sql?characterEncoding=utf8&amp;useSSL=<span class="literal">false</span>&amp;serverTimezone=GMT%<span class="number">2B8</span></span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line"></span><br><span class="line">mybatis:</span><br><span class="line">  mapper-locations: classpath:mapper<span class="comment">/**Mapper.xml</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+
+<h3 id="SSM常用配置"><a href="#SSM常用配置" class="headerlink" title="SSM常用配置"></a>SSM常用配置</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置数据库的连接字符串</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://127.0.0.1/mycnblog?characterEncoding=utf8</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">12345678</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="comment"># 设置 Mybatis 的 xml 保存路径</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mapper/*Mapper.xml</span></span><br><span class="line">  <span class="attr">configuration:</span> <span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line">    <span class="attr">log-impl:</span> <span class="string">org.apache.ibatis.logging.stdout.StdOutImpl</span></span><br><span class="line"><span class="comment"># 配置打印 MyBatis 执行的 SQL</span></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">com:</span></span><br><span class="line">      <span class="attr">example:</span></span><br><span class="line">        <span class="attr">demo:</span> <span class="string">debug</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Mybatis-xml模板"><a href="#Mybatis-xml模板" class="headerlink" title="Mybatis-xml模板"></a>Mybatis-xml模板</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.example.demo.mapper.UserMapper&quot;</span>&gt;</span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>XML</tag>
       </tags>
   </entry>
   <entry>
