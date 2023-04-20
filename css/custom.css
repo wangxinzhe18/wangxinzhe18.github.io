@@ -615,12 +615,44 @@ button {
 #home_top {
   margin: 0 auto 0;
   padding: 0px 15px;
-  max-width: 1280px;
+  max-width: 1380px;
   width: 100%;
   
 }
+/* 全局宽度 */
+.layout {
+  max-width: 1700px;
+  
+}
 
+.page .layout, .post .layout {
+  max-width: 1700px;
+}
 
+/* 侧边卡片栏宽度 */
+.aside-content {
+  max-width: 318px;
+  min-width: 300px;
+}
+
+/* 平板尺寸自适应(不启用侧边栏宽度限制) */
+@media screen and (max-width: 900px) {
+  .aside-content {
+    max-width: none !important;
+    padding: 0 5px 0 5px;
+  }
+}
+
+/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
+#archive,
+#page,
+#category,
+#tag {
+  width: 100%;
+}
+.page:not(.page.home) .aside-content {
+  display: none;
+}
 
 
 
@@ -646,9 +678,7 @@ canvas#universe {
 
 
 
-.page .layout, .post .layout {
-  max-width: 1450px;
-}
+
 
 /* 搜索按钮大小 */
 #nav #search-button {

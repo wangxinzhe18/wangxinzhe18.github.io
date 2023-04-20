@@ -293,6 +293,35 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手带你安装sublime插件带你高效刷算法</title>
+    <url>/posts/46a212e2.html</url>
+    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
+<li><strong>打开 [sublime text 3官网](<a href="https://www.sublimetext.com/download">Download - Sublime Text</a>)</strong></li>
+<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
+<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
+</ol>
+<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
+<p><img src="/posts/46a212e2.htm/222.png"></p>
+<ol>
+<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
+<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
+<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
+<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
+<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
+<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
+</ol>
+<p><img src="/posts/46a212e2.htm/123.png"></p>
+<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2Faf241e22-9d3d-4254-9cc9-9b48f72b3ffd%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1684497611&t=79da501c9f91d5d8194986282e05ca16" alt="img"></p>
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多线程的知识点</title>
     <url>/posts/43555ad1.html</url>
     <content><![CDATA[<h1 id="1-并发与并行🎊"><a href="#1-并发与并行🎊" class="headerlink" title="1.并发与并行🎊"></a>1.并发与并行🎊</h1><p><strong>并发：</strong><br><strong>指两个或多个事件在同一个时间段内发生。</strong></p>
@@ -343,35 +372,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手带你安装sublime插件带你高效刷算法</title>
-    <url>/posts/46a212e2.html</url>
-    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
-<li><strong>打开 [sublime text 3官网](<a href="https://www.sublimetext.com/download">Download - Sublime Text</a>)</strong></li>
-<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
-<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
-</ol>
-<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
-<p><img src="/posts/46a212e2.htm/222.png"></p>
-<ol>
-<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
-<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
-<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
-<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
-<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
-<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
-</ol>
-<p><img src="/posts/46a212e2.htm/123.png"></p>
-<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2Faf241e22-9d3d-4254-9cc9-9b48f72b3ffd%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1684497611&t=79da501c9f91d5d8194986282e05ca16" alt="img"></p>
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
