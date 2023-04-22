@@ -880,8 +880,8 @@ canvas#universe {
 }
 
 .category-bar-item:hover a {
-  background: #002afa;
-  color: #002afa;
+  background: #5097df;
+  color: #5aadec;
 }
 
 a {
@@ -895,7 +895,7 @@ a {
 
 .category-bar-item.select a {
   background: #425AEF;
-  color: var(--sevene-white);
+  color: white;
   border-radius: 8px;
 }
 
@@ -1322,6 +1322,97 @@ li.card-archive-list-item {
   -ms-transition: none!important;
   -o-transition: none!important;
 }
+
+
+
+
+
+
+
+
+/* 时间线 */
+.article-sort-item:before {
+  display: none;
+}
+
+.article-sort-title:before {
+  display: none;
+}
+
+.article-sort-title:after {
+  display: none;
+}
+
+.article-sort {
+  border: none;
+}
+
+.article-sort {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.article-sort-title {
+  margin-left: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.article-sort-title sup {
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.4;
+  top: -1em;
+}
+
+.article-sort-item {
+  margin: 0 0 1rem 0rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .article-sort-item-info a {
+      white-space: inherit !important;
+  }
+}
+
+.article-sort-item.year {
+  font-size: 0.8rem;
+  color: var(--bywind-secondtext);
+  margin-bottom: 0.2rem;
+}
+
+.article-sort-item-img img:hover {
+  transform: scale(1);
+}
+
+/* 文章列表 */
+.article-sort-item-info {
+  padding: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-sort-item-time {
+  order: 1;
+  margin-top: 4px;
+  color: var(--bywind-secondtext);
+}
+
+.article-sort-item-title {
+  order: 0;
+  font-weight: bold;
+}
+
+.article-sort-item-title:hover {
+  transform: translateX(0px);
+  color: var(--bywind-hovertext);
+}
+
 
 
 
