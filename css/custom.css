@@ -612,21 +612,21 @@ button {
   overflow: hidden
 } */
 
-#home_top {
+/* #home_top {
   margin: 0 auto 0;
   padding: 0px 15px;
   max-width: 1380px;
   width: 100%;
   
-}
+} */
 /* 全局宽度 */
 .layout {
-  max-width: 1700px;
+  max-width: 1400px;
   
 }
 
 .page .layout, .post .layout {
-  max-width: 1700px;
+  max-width: 1400px;
 }
 
 /* 侧边卡片栏宽度 */
@@ -844,13 +844,13 @@ canvas#universe {
 }
 
 .category-bar-item:hover a {
-  background: var(--sevene-theme);
-  color: var(--sevene-white);
+  background: var(--bywind-theme);
+  color: var(--bywind-white);
 }
 
 .category-bar-item.select a {
-  background: var(--sevene-theme);
-  color: var(--sevene-white);
+  background: var(--bywind-theme);
+  color: var(--bywind-white);
   border-radius: 8px;
 }
 
@@ -1117,3 +1117,146 @@ a {
 }
 
 
+/* 按钮样式 */
+.button--animated {
+  border-radius: 8px !important;
+  transition: 0.3s;
+}
+ 
+/* 侧边栏按钮文字 */
+a.card-archive-list-link-more {
+  color: var(--bywind-white) !important;
+  background: var(--bywind-card-btn-bg);
+  margin-top: 8px;
+}
+
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a {
+  border-radius: 8px;
+  margin: 4px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border: var(--style-border);
+}
+
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a span:first-child,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a span:first-child {
+  width: auto;
+}
+
+#aside-content .card-archives ul.card-archive-list,
+#aside-content .card-categories ul.card-category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-allinfo hr {
+  display: flex;
+  position: relative;
+  margin: 1rem 0;
+  border: 1px dashed var(--bywind-theme-op);
+}
+
+.card-allinfo .item-headline {
+  display: none;
+}
+
+span.card-archive-list-count {
+  width: auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 0.9;
+  font-weight: bold;
+}
+
+.card-archive-list-count-group {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a span:last-child,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a span:last-child {
+  width: fit-content;
+  margin-left: 4px;
+}
+
+.card-archive-list-count-unit {
+  width: auto;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-archive-list-date {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+li.card-archive-list-item {
+  width: 100%;
+  flex: 0 0 48%;
+}
+
+.card-category-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-category-list-item {
+  width: 45%;
+}
+
+.card-category-list-count {
+  display: none !important;
+}
+
+.card-category-list-name {
+  width: 100% !important;
+  text-align: center;
+}
+
+/* 侧边栏统计 */
+.webinfo-item {
+  display: flex;
+  white-space: nowrap;
+}
+
+.webinfo-item-title {
+  display: flex;
+}
+
+.webinfo-item-title i {
+  line-height: 2;
+  margin-right: 6px;
+  width: 16px;
+  text-align: center;
+}
+
+
+/* 标签云卡片 */
+#aside-content .card-tag-cloud a {
+  color: var(--bywind-fontcolor) !important;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+
+#aside-content .card-tag-cloud a:hover {
+  background: var(--bywind-theme);
+  color: var(--bywind-white) !important;
+  box-shadow: var(--bywind-shadow-theme);
+}
+
+#aside-content .card-tag-cloud a.tags-cloud-more {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px !important;
+  border: var(--style-border);
+  margin-top: 8px;
+  font-size: var(--global-font-size) !important;
+}

@@ -462,3 +462,36 @@
   #search-button a.site-page.social-icon.search span {
     display: none;
   }
+
+
+
+
+  /* 主页顶部封面 */
+#page-header.full_page {
+  height: 5rem;
+  background-image: none !important;
+  background-color: var(--bywind-none);
+}
+
+#page-header.full_page #site-info {
+  display: none;
+}
+
+#page-header #scroll-down .scroll-down-effects {
+  position: absolute;
+  /* width: 100%; */
+  display: none;
+  /* color: var(--light-grey); */
+  font-size: 30px;
+}
+
+
+
+#nav .menus_items {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.3em;
+}
