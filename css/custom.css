@@ -757,7 +757,9 @@ canvas#universe {
 
 /* 首页分类条展示 */
 #category-bar {
-    padding: .4rem 1rem .4rem .5rem;
+    /* padding: .4rem 1rem .4rem .5rem; */
+    margin-top:50px;
+    padding:10px;
     background: var(--heo-card-bg);
     border-radius: 30px;
     display: flex;
@@ -806,14 +808,14 @@ canvas#universe {
 }
 
 .category-bar-item:hover a {
-    background: var(--heo-main);
-    color: var(--heo-white);
+    background:rgb(64, 136, 230);
+    color: white;
     border-radius: 12px
 }
 
 .category-bar-item.select a {
-  background: var(--heo-main);
-  color: var(--heo-white);
+  background:rgb(64, 136, 230);
+  color: white;
   border-radius: 12px
 }
 
