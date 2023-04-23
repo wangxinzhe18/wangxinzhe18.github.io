@@ -895,7 +895,7 @@ canvas#universe {
 /* Twikoo 评论样式 */
 
 
-.tk-input .el-textarea__inner {
+/* .tk-input .el-textarea__inner {
   background-image: url(https://s1.hdslb.com/bfs/seed/jinkela/short/mini-login-v2/img/22_open.4ea5f239.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -903,6 +903,21 @@ canvas#universe {
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical;
   min-height: 120px !important;
+} */
+
+
+/* 右下角闭眼 */
+.el-textarea__inner {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;
+}
+.el-textarea__inner:focus {
+  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
+}
+
+#twikoo .el-textarea textarea {
+  border-radius: 16px;
+  min-height: 150px !important;
+  background-size: 90px;
 }
 
 #twikoo .OwO-body {
