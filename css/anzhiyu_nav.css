@@ -190,7 +190,7 @@
   
   #menus > div.menus_items > div > a {
     letter-spacing: 0.3rem;
-    font-weight: 700;
+    font-weight: 550;
     padding: 0em 0.3em 0em 0.5em;
     height: 35px;
     line-height: 35px;
@@ -307,9 +307,12 @@
     display: none;
   }
   #nav #search-button {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin-bottom: 6px;
   }
- 
+
+
+
   
   
   @media screen and (min-width: 900px) {
