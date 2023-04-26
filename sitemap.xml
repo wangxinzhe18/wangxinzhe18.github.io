@@ -2,9 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://demo.wxz666.icu/gallery/gaoda/index.html</loc>
+    
+    <lastmod>2023-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.wxz666.icu/gallery/index.html</loc>
+    
+    <lastmod>2023-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.wxz666.icu/gallery/dongman/index.html</loc>
+    
+    <lastmod>2023-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://demo.wxz666.icu/link/index.html</loc>
     
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.wxz666.icu/collect/index.html</loc>
+    
+    <lastmod>2023-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.wxz666.icu/about/index.html</loc>
+    
+    <lastmod>2023-04-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -218,27 +263,9 @@
   </url>
   
   <url>
-    <loc>https://demo.wxz666.icu/collect/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.wxz666.icu/movies/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.wxz666.icu/about/index.html</loc>
-    
-    <lastmod>2023-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -257,15 +284,6 @@
     <loc>https://demo.wxz666.icu/book/index.html</loc>
     
     <lastmod>2023-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://demo.wxz666.icu/gallery/index.html</loc>
-    
-    <lastmod>2023-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
