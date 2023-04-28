@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://demo.wxz666.icu/gallery/gaoda/index.html</loc>
+    <loc>https://demo.wxz666.icu/gallery/index.html</loc>
     
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://demo.wxz666.icu/gallery/index.html</loc>
+    <loc>https://demo.wxz666.icu/treasure/index.html</loc>
+    
+    <lastmod>2023-04-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://demo.wxz666.icu/gallery/gaoda/index.html</loc>
     
     <lastmod>2023-04-26</lastmod>
     
@@ -227,15 +236,6 @@
   </url>
   
   <url>
-    <loc>https://demo.wxz666.icu/treasure/index.html</loc>
-    
-    <lastmod>2023-04-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://demo.wxz666.icu/categories/index.html</loc>
     
     <lastmod>2023-04-13</lastmod>
@@ -400,14 +400,14 @@
 
   
   <url>
-    <loc>https://demo.wxz666.icu/categories/%E5%A3%81%E7%BA%B8/</loc>
+    <loc>https://demo.wxz666.icu/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2023-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://demo.wxz666.icu/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://demo.wxz666.icu/categories/%E5%A3%81%E7%BA%B8/</loc>
     <lastmod>2023-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
