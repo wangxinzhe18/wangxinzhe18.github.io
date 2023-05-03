@@ -1569,3 +1569,68 @@ li.card-archive-list-item {
 
 
 
+/* 搜索背景模糊 */
+#search-mask {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform: translateZ(0);
+  background: var(--heo-maskbgdeep);
+}
+
+
+
+
+
+.layout>div:first-child:not(.recent-posts) {
+  box-shadow: var(--heo-shadow-border);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background: var(--heo-card-bg);
+  border: var(--style-border);
+  width: calc(100% - 300px);
+  align-self: flex-start;
+  animation: slide-in 0.6s 0.1s backwards;
+}
+
+#page {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
+/* 文章列表 */
+.article-sort-item-info {
+  padding: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-sort-item-time {
+  order: 1;
+  margin-top: 4px;
+  color: var(--heo-secondtext);
+}
+
+.article-sort-item-title {
+  order: 0;
+  font-weight: bold;
+}
+
+.article-sort-item-title:hover {
+  transform: translateX(0px);
+  color: var(--heo-hovertext);
+}
+
+
+.tk-tag-red {
+  border-radius: 4px !important;
+  border: 0px solid #f3d8d8 !important;
+  font-size: 0.5rem !important;
+}
+
+/* 昵称 */
+.tk-nick {
+  font-size: 1rem !important;
+  line-height: 32px;
+}
