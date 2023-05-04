@@ -1634,3 +1634,206 @@ li.card-archive-list-item {
   font-size: 1rem !important;
   line-height: 32px;
 }
+
+
+
+
+
+
+/* index two card */
+#recent-posts{
+  width: calc(100% - 300px);
+  align-content:flex-start;
+  display: flex;
+  flex-wrap: wrap; /*规定灵活的项目在必要的时候拆行或拆列。*/
+  justify-content: space-between; /*。*/
+}
+#recent-posts>.recent-post-item {
+  margin-top: 1rem; /*最小间距*/
+  display: inline-block;
+  height:auto; /*高度自动*/
+  width:calc(50% - 7.5px);/*文章容器容器宽度*/
+}
+@media screen and (max-width: 768px){
+  #recent-posts .recent-post-item .recent-post-info .article-title {
+      font-size: 19px!important;
+  }
+  #recent-posts>.recent-post-item>.recent-post-info{
+      padding: 0 16px!important;
+  }
+}
+#recent-posts > .recent-post-item .post_cover {
+width: 100%; /*图片封面宽度*/
+height: 225px;/*图片封面高度*/
+}
+#recent-posts > .recent-post-item .post_cover img.post_bg {
+width: 100%;/*图片宽度*/
+height: 100%;/*图片高度*/
+}
+#recent-posts>.recent-post-item>.recent-post-info {
+  padding: 0 32px;
+  height: 138px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .content {
+display:none;/*隐藏文章详情*/
+}
+#recent-posts > .recent-post-item {
+-webkit-flex-direction: column; /*容器内部纵向排列*/
+-ms-flex-direction: column; /*容器内部纵向排列*/
+flex-direction: column; /*容器内部纵向排列*/
+
+}
+#recent-posts > .recent-post-item .left_radius {
+  border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+#recent-posts > .recent-post-item .right_radius {
+  border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+.recent-post-item{
+  height:auto !important;/*容器高度自动*/
+}
+
+.recent-post-info {
+padding: 0 40px;/*容器内部文字左右间距*/
+margin-top: 0.4em;/*容器内部文字上间距*/
+width: 100%!important;/*容器宽度*/
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+  -webkit-line-clamp: 2;/*控制标题的行数*/
+  margin-bottom: 0.3rem;/*控制标题的下间距*/
+  color: var(--mj-fontcolor);
+  font-size: 1.5em; /*控制标题的字体大小*/
+  font-weight: 700;
+  line-height: 1.4;/*控制标题的行高*/
+}
+#recent-posts > .recent-post-item >.recent-post-info a.article-title:hover{
+  color: var(--mj-fontcolor)!important;
+}
+@media screen and (max-width: 768px) {
+  #recent-posts > .recent-post-item {
+  width:100%;/*控制手机自适应*/
+  }
+}
+.article-meta-wrap-small,span.post-meta-date{font-size: small}
+.article-meta-wrap-small span{margin-right: 8px;}
+.recent-post-item:not(:nth-child(2)) .article-meta-wrap-small .lastestpost {
+  display: none;
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap{
+  position: absolute;
+  bottom: 8px;
+}
+
+
+
+
+
+
+:root{
+  --global-bg: #f7f9fe;
+  --mj-white: #fff;
+  --mj-black: #000;
+  --mj-none: rgba(0,0,0,0);
+  --mj-gray: #999999;
+  --mj-gray-op: #9999992b;
+  --mj-yellow: #ffc93e;
+  --mj-pink: #F08080;
+  --mj-red-bg: rgba(254,239,238,.5);
+  --mj-cyan-bg: rgba(225,234,249,.5);
+  --mj-blue-bg: rgba(232,244,253,.5);
+  --mj-main: #425AEF;
+  --mj-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234,.20);
+  --mj-shadow-white: 0 8px 12px -3px rgba(255, 255, 255,.20);
+  --mj-shadow-black: 0 0 12px 4px rgba(0, 0, 0,.05);
+  --mj-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62,.12);
+  --mj-shadow-pink: 0 8px 12px -3px #ee7d7936;
+  --mj-logo-color: linear-gradient(215deg,#4584ff 30%,#ff7676 70%);
+  --global-font-size: 16px;
+  --mj-light-box-shadow: 0 1px 8px 0 rgb(240 240 240 / 50%);;
+  --style-hover-border: 1px solid var(--mj-theme);
+  --search-bg: var(--mj-card-bg);
+  --text-bg-hover: var(--mj-theme);
+  --card-box-shadow: none;
+  --card-hover-box-shadow: none;
+  --mj-bg-blur: rgba(0,0,0,0.2);
+  --mj-logo-color: linear-gradient(215deg,var(--mj-yellow) 0%,var(--mj-pink) 100%);
+  --mj-theme-op: #4259ef23;
+  --style-border-dashed: 1px dashed var(--mj-theme-op);
+  --card-bg: var(--mj-card-bg);
+}
+
+
+
+::selection {
+  background: var(--mj-blue);
+  color: var(--mj-white);
+}
+
+[data-theme=light] {
+  --mj-theme: #425AEF;
+  --mj-blue: #425AEF;
+  --mj-red: #D8213C;
+  --mj-green: #008200;
+  --mj-fontcolor: #363636;
+  --mj-background: #f7f9fe;
+  --mj-reverse: #000;
+  --mj-maskbg: rgba(255, 255, 255, 0.6);
+  --mj-hovertext: #5374ff;
+  --mj-ahoverbg: #F7F7FA;
+  --mj-lighttext: #ef794f;
+  --mj-secondtext: rgba(60, 60, 67, 0.6);
+  --mj-scrollbar: rgba(60, 60, 67, 0.4);
+  --mj-card-btn-bg: #f1f2f2;
+  --mj-post-blockquote-bg: #f7f9fe;
+  --mj-post-tabs-bg: #f2f5f8;
+  --mj-secondbg: #ededed;
+  --mj-shadow-nav:0 5px 12px -5px rgba(102, 68, 68, 0.3);
+  --mj-card-bg: #fff;
+  --mj-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.00);
+  --mj-shadow-light2black:0 5px 12px -5px rgba(102, 68, 68, 0.00);
+  --mj-card-border: #e3e8f7;
+  --style-border: 1px solid var(--mj-card-border);
+  --mj-readmodebg: rgb(232,225,225);
+  --mj-transparent-card-bg: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme=dark] {
+  --global-bg: var(--mj-gray);
+  --font-color: rgba(255,255,255,0.9);
+  --mj-theme: #0084FF;
+  --mj-main: #0084FF;
+  --mj-blue: #0084FF;
+  --mj-red: #FF3842;
+  --mj-green: #00FF00;
+  --mj-fontcolor: #F7F7FA;
+  --mj-background: #18171d;
+  --mj-reverse: #fff;
+  --mj-maskbg: rgba(0,0,0, 0.6);
+  --mj-hovertext: #425AEF;
+  --mj-ahoverbg: #fff;
+  --mj-lighttext: #f2b94b;
+  --mj-secondtext: #a1a2b8;
+  --mj-scrollbar: rgba(200, 200, 223, 0.4);
+  --mj-card-btn-bg: #2e2d38;
+  --mj-post-blockquote-bg: #1E1E1E;
+  --mj-post-tabs-bg: #121212;
+  --mj-secondbg: #30343f;
+  --mj-shadow-nav:0 5px 20px 0px rgba(28, 28, 28, 0.4);
+  --mj-card-bg: #1E1F26;/*#1d1b26;*/
+  --mj-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.0);
+  --mj-shadow-light2black:0 5px 12px -5px rgba(102, 68, 68, 0.0);
+  --btn-color: #F7F7FA;
+  --text-highlight-color: #F7F7FA;
+  --text-bg-hover: #0084FF;
+  --btn-hover-color: var(--mj-theme);
+  --mj-card-border: #42444a;
+  --style-border: 1px solid var(--mj-card-border);
+  --mj-readmodebg: #0d0d0d;
+  --mj-transparent-card-bg: rgba(19, 20, 21, 0.8);
+  --bbtalk-color: #30343f;
+  --mj-darkmode-btn: #ffc93e;
+}
