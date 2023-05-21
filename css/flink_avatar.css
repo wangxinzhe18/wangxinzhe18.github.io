@@ -1,0 +1,174 @@
+.flink-card {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: var(--style-border);
+    /* background-image: url(/img/flink_page.webp); */
+    background-color: var(--heo-card-bg);;
+    background-size: cover;
+    -webkit-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -moz-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -ms-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -o-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    box-shadow: 0 8px 16px -4px #2c2d300c;
+  }
+  
+  .flink-card-title {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flink-card-title .flink-card-title-small {
+    font-size: 12px;
+    line-height: 1;
+    color: var(--heo-secondtext);
+    margin-top: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .flink-card-title .flink-card-title-big {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .flink-card-btn-group a:hover {
+    text-decoration: unset !important;
+  }
+  
+  .flink-card-desc {
+    font-size: 80%;
+    opacity: .8
+  }
+  
+  .flink-card-btn-group {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    display: flex
+  }
+  
+  .flink-card-btn {
+    height: 3em;
+    padding: .5em .8em;
+    margin-left: 1.5rem;
+    border-radius: 12px;
+    background: var(--font-color);
+    /* background: rgba(125,125,125,.2); */
+    backdrop-filter: var(--backdrop-filter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+  }
+  
+  .flink-card-btn * {
+    color: #F2F6FC;
+    margin: .2em
+  }
+  
+  .flink-card-btn:hover {
+    background: #425AEF;
+    -webkit-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -moz-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -ms-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -o-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05)
+  }
+  
+  .flink-card-btn:hover * {
+    color: #fff
+  }
+  
+  .flink-card-container {
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  
+  .flink-card-wrapper {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-wrap: nowrap;
+    animation: rowup 60s linear infinite;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  .flink-icon-pair {
+    margin-left: 1rem
+  }
+  
+  .flink-icon-pair .flink-icon:nth-child(even) {
+    -webkit-transform: translate(-60px);
+    -moz-transform: translate(-60px);
+    -ms-transform: translate(-60px);
+    -o-transform: translate(-60px);
+    transform: translate(-60px);
+    margin-top: 1rem;
+  }
+  
+  .flink-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: .5rem 0;
+    -webkit-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -moz-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -ms-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    -o-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
+    box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05)
+  }
+  
+  .flink-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%!important;
+    margin: auto!important
+  }
+  
+  #article-container .flink-list .flink-item-circle {
+    color: #57bd6a;
+    opacity: .8;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    z-index: 1;
+    cursor: url(https://npm.elemecdn.com/eurkon-cdn/hexo/images/user/pointer.cur),pointer!important;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease
+  }
+  
+  #article-container .flink-list .flink-item-circle:hover {
+    color: #397d45;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #article-container > div.flink > div.flink-card > div.flink-card-btn-group {
+      margin-top: 20px;
+      right: 2rem;
+      top: unset !important;
+      bottom: 20px;
+    }
+  
+    .flink-card {
+      padding: 0px 0px 80px 0px;
+    }
+  }

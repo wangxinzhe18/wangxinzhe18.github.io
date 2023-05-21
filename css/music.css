@@ -25,7 +25,8 @@
   }
   
   body:has(#anMusic-page) {
-    background: rgb(203, 146, 192);
+    /* background: rgb(203, 146, 192); */
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   }
   
   #anMusic-page meting-js .aplayer {
