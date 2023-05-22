@@ -256,6 +256,35 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手带你安装sublime插件带你高效刷算法</title>
+    <url>/posts/46a212e2.html</url>
+    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
+<li><strong>打开 <a href="[Download - Sublime Text](https://www.sublimetext.com/download">sublime text 3官网</a>)</strong></li>
+<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
+<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
+</ol>
+<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
+<p><img src="/posts/46a212e2.htm/222.png" alt></p>
+<ol>
+<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
+<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
+<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
+<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
+<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
+<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
+</ol>
+<p><img src="/posts/46a212e2.htm/123.png" alt></p>
+<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2Faf241e22-9d3d-4254-9cc9-9b48f72b3ffd%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&amp;refer=http%3A%2F%2Fsafe-img.xhscdn.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1684497611&amp;t=79da501c9f91d5d8194986282e05ca16" alt="img"></p>
+]]></content>
+      <categories>
+        <category>CF</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多线程的知识点</title>
     <url>/posts/43555ad1.html</url>
     <content><![CDATA[<h1 id="1-并发与并行🎊"><a href="#1-并发与并行🎊" class="headerlink" title="1.并发与并行🎊"></a>1.并发与并行🎊</h1><p><strong>并发：</strong><br><strong>指两个或多个事件在同一个时间段内发生。</strong></p>
@@ -304,35 +333,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手带你安装sublime插件带你高效刷算法</title>
-    <url>/posts/46a212e2.html</url>
-    <content><![CDATA[<h1 id="安装sublime-Text-3💦"><a href="#安装sublime-Text-3💦" class="headerlink" title="安装sublime Text 3💦"></a>安装sublime Text 3💦</h1><ol>
-<li><strong>打开 <a href="[Download - Sublime Text](https://www.sublimetext.com/download">sublime text 3官网</a>)</strong></li>
-<li><strong><code>windows32</code>位操作选择 <code>windows</code></strong></li>
-<li><strong><code>windos64</code>位 选择<code>windows 64bit</code></strong></li>
-</ol>
-<p>​                                       <strong>傻瓜式安装即可~~</strong></p>
-<p><img src="/posts/46a212e2.htm/222.png" alt></p>
-<ol>
-<li><strong>打开软件，点击Preference，选择最底部的Package Control，出现查找栏。这里注意：如果点击Preference没有Package Control，可以选择按住快捷键<code>Shift+Ctrl+P</code>，也会出现查找栏。</strong></li>
-<li><strong>下载完成后再次Ctrl + shift + P，调出框框，输入install，按回车，这时候就可以下载插件了</strong></li>
-<li><strong>输入<code>cppfastOlympiccoding</code>，下载这个插件。</strong></li>
-<li><strong>Ctrl + n 创建一个文件 后缀改为 <code>.cpp</code> 然后Ctrl + s保存即可~</strong></li>
-<li><strong>保存之后就可以编写代码了，代码写完之后，Ctrl + alt + B就可以调出右侧栏运行了。用这个插件</strong></li>
-<li><strong>一定是要配置了 MinGW配置了环境变量才能用哈</strong></li>
-</ol>
-<p><img src="/posts/46a212e2.htm/123.png" alt></p>
-<p><strong>快来跟王同学一起快乐的刷算法吧~❣</strong></p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2Faf241e22-9d3d-4254-9cc9-9b48f72b3ffd%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&amp;refer=http%3A%2F%2Fsafe-img.xhscdn.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1684497611&amp;t=79da501c9f91d5d8194986282e05ca16" alt="img"></p>
-]]></content>
-      <categories>
-        <category>CF</category>
-      </categories>
-      <tags>
-        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
@@ -420,28 +420,6 @@
       </categories>
       <tags>
         <tag>yaml</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机OSI模型</title>
-    <url>/posts/db1ddf8c.html</url>
-    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
-<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
-<h2 id="ISO-OSI-参考模型–怎么来的？"><a href="#ISO-OSI-参考模型–怎么来的？" class="headerlink" title="ISO/OSI 参考模型–怎么来的？"></a>ISO/OSI 参考模型–怎么来的？</h2><span id="more"></span>
-<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
-<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
-<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
-<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
-<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
-<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
-<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
-<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>
@@ -573,6 +551,28 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机OSI模型</title>
+    <url>/posts/db1ddf8c.html</url>
+    <content><![CDATA[<h2 id="计算机网络-OSI-模型"><a href="#计算机网络-OSI-模型" class="headerlink" title="计算机网络 OSI 模型"></a>计算机网络 OSI 模型</h2><p><strong><code>计算机网络 OSI 模型</code>（Open Systems Interconnection model）是一种概念模型，它表征并标准化电信或计算系统的通信功能，而不考虑其基础内部结构和技术。 其目标是<code>多种通信系统</code>与<code>标准协议</code>的互操作性。 该模型将通信系统划分为<code>抽象层</code>。 该模型的原始版本定义了<code>七层</code>。</strong><br><strong>一个图层服务于它上面的图层，并由它下面的图层提供服务。 例如，通过网络提供无差错通信的层提供其上方的应用程序所需的路径，而它调用下一个较低层来发送和接收包含该路径内容的数据包。 在同一图层上的<code>两个实例</code>通过该层中的<code>水平连接</code>进行<code>可视化连接</code>。</strong></p>
+<p><img src="https://bbsmax.ikafan.com/static/L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xMTk1NDI3LzIwMTgwMy8xMTk1NDI3LTIwMTgwMzE3MTg1ODM5ODgxLTE3OTU4NTUzMDQucG5n.jpg" alt="img"></p>
+<h2 id="ISO-OSI-参考模型–怎么来的？"><a href="#ISO-OSI-参考模型–怎么来的？" class="headerlink" title="ISO/OSI 参考模型–怎么来的？"></a>ISO/OSI 参考模型–怎么来的？</h2><span id="more"></span>
+<p><strong>目的：支持异构网络系统的互联互通<br>国际标准化组织(ISO)于 1984 年提出开放系统互连（OSI）参考模型<br>但是 理论 成功！市场失败！</strong></p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p><strong>物理层是网络通信所有层次中的最底层,支持着其它层次的实现。它是网络通信得以实现的物理介质并提供了基本的电气连接和系统功能,因此也称之为布线层。</strong><br><strong>物理层负责<code>传递</code>各层次之间所使用的信号,虽然这一层对用户来说无很大意义,然而,没有物理层的低级支援,任何通信都不可能被建立。</strong></p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>两个系统间的通信最终是以建立在通信线路上的<code>数据流形式</code>实现的。数据链路层是十分关键的一层数据流处理层,它把所需传送的信息<code>打包</code>,将数据发送出去或接收另一系统传来的数据包进行处理。</strong></p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><strong>网络层可谓网络通信的小型控制中心,它根据<code>网络条件</code>、服务的优先权和其它因素来决定数据应使用那一条路由进行传送。网络层软件一般驻留于网络的交换器中,并且为应用软件提供了相应的数据控制接口。</strong></p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p><strong>在功能上,<code>传输层</code>完成了<code>大多数网络层</code>的操作,但大多只能在<code>本地执行</code>。这一层实现了强于<code>数据链路层</code>的系统调度功能,如寻找正确路由、检测故障等功能。它通过确保接受的数据具有正确的格式和次序而进行<code>传输质量控制</code>。这往往对不同的计算机之间的连接至关重要。</strong></p>
+<h1 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h1><p><strong>会话层完成较<code>高层次上</code>的网络功能,使两个应用程序在<code>网络上通信</code>、<code>安全性操作</code>、名字识别、登录、管理以及其它一些类似的功能。值得一提的是,并非所有支持 051 的产品都可明确指明其专用于 OSI 模型的哪一层,如 NetBios、Namedpipes 等软件即实现了传输层功能,又完成了部分会话层的任务。为了扩充会话层应用标准,OSI 又开发了 <code>1508327 标准</code>,该标准是一个面向连接的会话协议规范。</strong></p>
+<h1 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h1><p><strong>对该层最直观的理解可认为是屏幕上看到的<code>字符</code>、<code>图形</code>、<code>特殊数据格式</code>等。它主要完成屏幕和文件的格式化功能以实现程序员设计意图。</strong></p>
+<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p><strong>与<code>前述六层不同</code>的是,应用层是<code>完全面向用户服务</code>的,它是用户与底层支撑软件的接口。许多网络应用软件、网络操作系统都是在该层次上的直接应用,如文件<code>打印机共享</code>、<code>电子邮件</code>、<code>记帐</code>等等功能。而且该层中的规范大多是新制订的,如 BIM 的系统应用体系(SAA)和用于电子邮件的 X.400 信息处理规范等。</strong></p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
       </tags>
   </entry>
   <entry>

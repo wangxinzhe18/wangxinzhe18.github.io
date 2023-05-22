@@ -4,6 +4,7 @@
     border-radius: 12px;
     border: var(--style-border);
     /* background-image: url(/img/flink_page.webp); */
+    background-image: url('/img/w2.png');
     background-color: var(--heo-card-bg);;
     background-size: cover;
     -webkit-box-shadow: 0 8px 12px -3px rgba(45, 45, 45, .05);
