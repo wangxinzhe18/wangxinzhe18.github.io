@@ -1841,7 +1841,7 @@ width: 100%!important;/*容器宽度*/
 
 /* 侧边距头像框 */
 #aside-content > .card-widget:first-child {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
@@ -1926,3 +1926,29 @@ li.card-archive-list-item {
 /* 侧栏归档样式end */
 
 
+/* 文章擦亮 效果 */
+/* #recent-posts > .recent-post-item:not(a)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  transform: translateX(-200%);
+  transition: transform 0.4s linear;
+  z-index: 1;
+}
+#recent-posts > .recent-post-item:not(a):hover::before {
+  transform: translateX(100%) skewX(-60deg);
+} */
+
+
+
+#welcome-info {
+  overflow: hidden;
+  border-radius: 14px;
+  --kouseki-welcome-color: #49B1F5;
+  --kouseki-ip-color: #49B1F5;
+  --kouseki-gl-size: 16px!important;
+}
