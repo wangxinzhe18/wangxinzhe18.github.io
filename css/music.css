@@ -83,13 +83,17 @@
   }
   
   #anMusic-page .aplayer-info .aplayer-lrc {
+    line-height: 50px;
+    margin-bottom: 20px;
     height: 800%;
     margin-top: 80px;
     mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000);
   }
   #anMusic-page .aplayer-info .aplayer-lrc p {
+    line-height: 50px;
     font-size: 14px;
-    color: #fff;
+    padding: 10px 0;
+    color: #1b1818;
   }
   #anMusic-page .aplayer .aplayer-lrc:after,
   #anMusic-page .aplayer .aplayer-lrc:before {

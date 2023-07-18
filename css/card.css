@@ -1,7 +1,7 @@
 /************************************************* 个人资料卡片 *************************************************/
-#aside-content > .card-widget:first-child {
+/* #aside-content > .card-widget:first-child {
     background: #fff url(https://image.anzhiy.cn/adminuploads/1/2022/10/26/6358a07bf21fc.webp) top -24% center no-repeat;
-  }
+  } */
   
   [data-theme=dark] #aside-content>.card-widget:first-child {
     background: #121212 !important
