@@ -1952,3 +1952,80 @@ li.card-archive-list-item {
   --kouseki-ip-color: #49B1F5;
   --kouseki-gl-size: 16px!important;
 }
+
+
+/***************************** 页数跳转按钮 *****************************/
+.pagination input {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: var(--style-border-always);
+  transition: all 0.3s;
+  outline-style: none;
+  font-size: 16px;
+  padding-left: 12px;
+  background: var(--heo-secondbg);
+  color: var(--heo-fontcolor);
+}
+
+.pagination .toPageGroup:hover input,.pagination .toPageGroup input:focus {
+  border: 1px solid #425AEF;
+  outline-style: none;
+  width: 100px;
+}
+
+.toPageGroup {
+  display: flex !important;
+  position: relative;
+  margin: 0 0.3rem !important;
+}
+
+a#toPageButton {
+  display: flex;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  background: var(--heo-card-bg);
+  border: var(--style-border-always);
+  cursor: text !important;
+  pointer-events: none;
+}
+
+.toPageGroup:hover a#toPageButton, .toPageGroup:focus-within a#toPageButton {
+  margin-top: 2.5px;
+  width: 27px;
+  height: 27px;
+  margin-left: 70px;
+  background: var(--heo-card-bg);
+  border: 1px solid var(--heo-none);
+  border-radius: 4px;
+  opacity: 0.2;
+  transition: all 0.3s !important;
+}
+
+.toPageGroup:focus-within a#toPageButton.haveValue {
+  opacity: 1;
+  cursor: pointer;
+}
+
+a#toPageButton.haveValue {
+  opacity: 1!important;
+  cursor: pointer!important;
+  pointer-events: all;
+}
+
+a#toPageButton.haveValue:hover {
+  background: var(--heo-theme);
+  color: var(--heo-white);
+}
+
+@media screen and (max-width: 768px) {
+  .toPageGroup {
+    display: none !important;
+  }
+}
+/***************************** 页数跳转按钮 *****************************/
