@@ -1,6 +1,6 @@
+https://demo.wxz666.icu/link/index.html
 https://demo.wxz666.icu/posts/4a5cb451.html
 https://demo.wxz666.icu/posts/7247b6a5.html
-https://demo.wxz666.icu/link/index.html
 https://demo.wxz666.icu/gallery/MC/index.html
 https://demo.wxz666.icu/about/index.html
 https://demo.wxz666.icu/gallery/index.html
@@ -42,8 +42,8 @@ https://demo.wxz666.icu/
 https://demo.wxz666.icu/tags/jpg/
 https://demo.wxz666.icu/tags/%E7%AE%97%E6%B3%95/
 https://demo.wxz666.icu/tags/yaml/
-https://demo.wxz666.icu/tags/java/
 https://demo.wxz666.icu/tags/XML/
+https://demo.wxz666.icu/tags/java/
 https://demo.wxz666.icu/tags/cpp/
 https://demo.wxz666.icu/tags/C%E8%AF%AD%E8%A8%80/
 https://demo.wxz666.icu/tags/%E5%90%8E%E7%AB%AF/
